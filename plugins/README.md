@@ -1,6 +1,6 @@
 # 插件工作区维护说明
 
-本文写给维护 Reveric 插件系统的开发者：说明 `plugins/` 工作区和 SDK 的结构、契约改动要同步哪些地方、怎么构建、验证和发布。插件开发者的文档是 [sdk/README.md](sdk/README.md)，它也是 npm 包 `reveric-plugin-sdk` 的说明页。
+本文写给维护创作工作台插件系统的开发者：说明 `plugins/` 工作区和 SDK 的结构、契约改动要同步哪些地方、怎么构建、验证和发布。插件开发者的文档是 [sdk/README.md](sdk/README.md)，它也是 npm 包 `reveric-plugin-sdk` 的说明页。
 
 ## 工作区
 

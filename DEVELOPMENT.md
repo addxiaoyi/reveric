@@ -1,6 +1,6 @@
 # 开发与构建
 
-本指南面向从源码运行和打包 Reveric 的开发者。支持 Windows、macOS、Android；桌面应用需要在对应操作系统上构建。当前发布架构为 macOS arm64、Windows x64、Android arm64-v8a。
+本指南面向从源码运行和打包本应用的开发者。支持 Windows、macOS、Android；桌面应用需要在对应操作系统上构建。当前发布架构为 macOS arm64、Windows x64、Android arm64-v8a。
 
 除特别注明外，命令均在仓库根目录执行。本地 Flutter 命令统一使用 `fvm flutter`，避免误用系统 PATH 中的其他 SDK。
 
@@ -26,7 +26,7 @@ Flutter 使用固定提交，不能用 `stable` 或 `master` 的最新版本替�
 先按 [FVM 安装说明](https://fvm.app/documentation/getting-started/installation) 和 [rustup 安装说明](https://rustup.rs/) 安装工具，并确认 `fvm`、`rustup`、`cargo` 在 PATH 中。
 
 ```sh
-git clone https://github.com/looplj/reveric.git
+git clone https://github.com/addxiaoyi/reveric.git
 cd reveric
 
 fvm install --skip-pub-get
@@ -84,15 +84,15 @@ make build-macos-release
 
 构建结果位于：
 
-- Debug：`build/macos/Build/Products/Debug/Reveric.app`
-- Release：`build/macos/Build/Products/Release/Reveric.app`
+- Debug：`build/macos/Build/Products/Debug/Creative Workspace.app`
+- Release：`build/macos/Build/Products/Release/Creative Workspace.app`
 
 排查 FJS 产物时，可单独执行：
 
 ```sh
 bash third/fjs/tool/build_runtime.sh
 bash third/fjs/tool/build_runtime.sh --verify
-bash third/fjs/tool/build_runtime.sh --verify-app build/macos/Build/Products/Debug/Reveric.app
+bash third/fjs/tool/build_runtime.sh --verify-app build/macos/Build/Products/Debug/Creative Workspace.app
 ```
 
 项目禁用了上游 FJS 预编译包下载，归档从当前源码生成，并校验源码、工具链和校验和。原生构建失败时应处理实际错误，不要换用上游二进制绕过。

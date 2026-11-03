@@ -108,5 +108,6 @@
   "common.revoke": "撤销",
   "common.resume": "恢复",
   "common.run_now": "立即运行",
-  "common.grant": "授权"
+  "common.grant": "授权",
+  "common.author": "作者"
 }

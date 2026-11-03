@@ -5,7 +5,7 @@
 //   lib/shared/widgets/settings/provider_logo.dart
 
 const providerChannelUrls = {
-  'metaso': 'https://metaso.cn/minimax-h3/?s=Reveric',
+  'metaso': 'https://metaso.cn/minimax-h3/',
   'api88': 'https://88api.ai/sign-up?aff=5q8X',
   'openai': 'https://platform.openai.com/api-keys',
   'openrouter': 'https://openrouter.ai/settings/keys',

@@ -17,7 +17,7 @@ const SITE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(SITE, '..');
 const SRC = join(ROOT, 'designs', 'website');
 const DIST = join(SITE, 'dist');
-const REPO = 'https://github.com/looplj/reveric';
+const REPO = 'https://github.com/addxiaoyi/reveric';
 
 // 页面和它引用的资源；directions.html 等设计过程文件不发布
 const PAGE_FILES = ['index.html', 'landing.css', 'landing.js', 'assets', 'fonts', 'vendor'];

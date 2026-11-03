@@ -1,14 +1,14 @@
 {
   "name": "reveric-plugin-sdk",
   "version": "0.1.0",
-  "description": "SDK, TSX page compiler and build CLI for Reveric plugins.",
+  "description": "SDK, TSX page compiler and build CLI for app plugins.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/looplj/reveric.git",
+    "url": "git+https://github.com/addxiaoyi/reveric.git",
     "directory": "plugins/sdk"
   },
-  "homepage": "https://github.com/looplj/reveric/tree/unstable/plugins/sdk#readme",
+  "homepage": "https://github.com/addxiaoyi/reveric/tree/unstable/plugins/sdk#readme",
   "type": "module",
   "engines": {
     "node": ">=22"

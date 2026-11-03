@@ -1,4 +1,4 @@
-// 职责: 组装 Reveric 的 A2UI 组件目录 reveric-ui-v1 — 基础目录同名组件沿用官方 Schema，补充自定义组件并绑定 Flutter builder。
+// 职责: 组装 A2UI 组件目录 reveric-ui-v1 — 基础目录同名组件沿用官方 Schema，补充自定义组件并绑定 Flutter builder。
 // 关联文件:
 //   lib/shared/widgets/a2ui/component.dart
 //   lib/shared/widgets/a2ui/session.dart
@@ -53,7 +53,7 @@ const _basicBuilders = <String, A2uiComponentBuilder>{
   'CheckBox': buildCheckBox,
 };
 
-/// 基础目录没有、由 Reveric 补充的组件。
+/// 基础目录没有、由本应用补充的组件。
 final _customComponents = <A2uiComponent>[
   A2uiComponent(
     name: 'Gap',
@@ -150,7 +150,7 @@ A2uiCatalog _buildCatalog() {
   return A2uiCatalog(
     id: revericA2uiCatalogId,
     protocolVersion: A2uiProtocolVersion.v1_0,
-    title: 'Reveric UI',
+    title: 'Creative Workspace UI',
     instructions:
         'Build the UI from the components below. Layout: Column, Row, List, '
         'Card, Gap, Divider. Display: Text, Markdown, Icon, Loading. Input: '

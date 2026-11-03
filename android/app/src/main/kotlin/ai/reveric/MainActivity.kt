@@ -500,7 +500,7 @@ class MainActivity : FlutterActivity() {
         )
         val intent = Intent(Intent.ACTION_VIEW).apply {
             setDataAndType(apkUri, APK_MIME_TYPE)
-            clipData = ClipData.newUri(contentResolver, "Reveric update", apkUri)
+            clipData = ClipData.newUri(contentResolver, "App update", apkUri)
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             putExtra(Intent.EXTRA_NOT_UNKNOWN_SOURCE, true)

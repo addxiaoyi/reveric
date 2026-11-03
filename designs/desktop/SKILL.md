@@ -1,12 +1,12 @@
 ---
 name: reveric-design
-description: Use this skill to generate well-branded interfaces and assets for Reveric, the AI-assisted long-form fiction writing app, either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
+description: Use this skill to generate well-branded interfaces and assets for the app, an AI-assisted long-form fiction writing app, either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
 user-invocable: true
 ---
 
-# Reveric Design Skill
+# 创作工作台 Design Skill
 
-Reveric is an **AI-assisted long-form fiction writing application**. The
+The app is an **AI-assisted long-form fiction writing application**. The
 visual language is calm and modern — cool mint‑white canvas, white cards
 on soft shadows, near‑black ink‑jade actions (jade for AI), sans for every
 title and all UI, Georgia only for manuscript prose. The writer is the hero;
@@ -77,7 +77,7 @@ landing-style sketch, screenshot deliverable):**
 
 ## If the user invokes this skill with no guidance
 
-Ask **what surface** they want — Reveric only ships one product, the
+Ask **what surface** they want — the app only ships one product, the
 desktop client, but within it there are five clear surface families:
 
 1. **Home / Library** — novels grid + AI rail
@@ -90,7 +90,7 @@ desktop client, but within it there are five clear surface families:
 Then ask whether they want:
 - A throwaway mock (single HTML)
 - A clickable prototype (multiple screens, one HTML with React)
-- A slide deck describing a Reveric concept
+- A slide deck describing an app concept
 - Production-grade Flutter widgets (read AGENTS.md inside the repo
   first; follow the file-header comment convention)
 

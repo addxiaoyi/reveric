@@ -13,7 +13,7 @@ void main() {
     test('waits for the running app before opening the replacement app', () {
       final script = buildMacOSRestartScript(
         processId: 42,
-        appPath: '/Applications/Reveric.app',
+        appPath: '/Applications/Creative Workspace.app',
         scriptPath: '/tmp/reveric_restart.sh',
       );
 
@@ -30,8 +30,8 @@ void main() {
 
     test('quotes shell single-quoted string literals', () {
       expect(
-        shellSingleQuotedString("/Applications/Reveric O'Clock.app"),
-        "'/Applications/Reveric O'\"'\"'Clock.app'",
+        shellSingleQuotedString("/Applications/Creative Workspace O'Clock.app"),
+        "'/Applications/Creative Workspace O'\"'\"'Clock.app'",
       );
     });
   });

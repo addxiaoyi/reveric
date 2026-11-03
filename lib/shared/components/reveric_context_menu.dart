@@ -1,4 +1,4 @@
-// 职责: Reveric 通用右键上下文菜单 — 在指定位置弹出带阴影圆角卡片菜单，对齐 RevericSelect 浮层视觉
+// 职责: 通用右键上下文菜单 — 在指定位置弹出带阴影圆角卡片菜单，对齐 RevericSelect 浮层视觉
 // 关联文件:
 //   lib/shared/components/reveric_select.dart
 //   lib/shared/theme/theme.dart
@@ -67,7 +67,7 @@ class RevericMenuDivider extends RevericMenuEntry {
   const RevericMenuDivider();
 }
 
-/// 在 [position]（全局坐标）处弹出 Reveric 风格上下文菜单。
+/// 在 [position]（全局坐标）处弹出统一样式上下文菜单。
 ///
 /// 通常在 `GestureDetector.onSecondaryTapDown` 中调用，传入
 /// `details.globalPosition`。点击菜单项或点击空白处关闭。

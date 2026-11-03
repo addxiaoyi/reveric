@@ -615,7 +615,7 @@ class MyApp extends ConsumerWidget {
         : darkThemeData;
 
     return MaterialApp(
-      title: 'Reveric',
+      title: tr(LocaleKeys.appTitle),
       debugShowCheckedModeBanner: false,
       navigatorKey: SystemTrayService().navigatorKey,
       theme: effectiveThemeData.toThemeData(),

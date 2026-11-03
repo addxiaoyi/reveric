@@ -1,4 +1,4 @@
-// 职责: Reveric 通用自定义颜色弹窗 — HSV 色盘 + hex 输入，取消返回 null
+// 职责: 通用自定义颜色弹窗 — HSV 色盘 + hex 输入，取消返回 null
 // 关联文件:
 //   lib/shared/widgets/settings/editor_settings_section.dart
 //   lib/desktop/features/canvas/widgets/canvas_node_color_picker.dart

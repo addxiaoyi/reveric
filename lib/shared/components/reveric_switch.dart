@@ -1,4 +1,4 @@
-// 职责: Reveric 开关控件 — 提供统一的紧凑 switch 外观。
+// 职责: 开关控件 — 提供统一的紧凑 switch 外观。
 // 关联文件:
 //   lib/shared/theme/theme.dart
 //   lib/desktop/widgets/settings/settings_dialog.dart

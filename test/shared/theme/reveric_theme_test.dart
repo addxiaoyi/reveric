@@ -1,4 +1,4 @@
-// 职责: 验证 Reveric 跨端主题的字体契约与开关状态对比度。
+// 职责: 验证跨端主题的字体契约与开关状态对比度。
 // 关联文件:
 //   lib/shared/theme/reveric_theme.dart
 //   lib/shared/theme/reveric_typography.dart

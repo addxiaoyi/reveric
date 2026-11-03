@@ -58,7 +58,7 @@ class _Monogram extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = RevericTheme.colorsOf(context);
     final typo = RevericTheme.typographyOf(context);
-    final name = username.trim().isEmpty ? 'Reveric' : username.trim();
+    final name = username.trim().isEmpty ? '?' : username.trim();
     final tone = _toneFor(name);
     final glyph = String.fromCharCode(name.runes.first).toUpperCase();
 

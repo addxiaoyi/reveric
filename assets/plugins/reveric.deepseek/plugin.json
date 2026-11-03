@@ -9,7 +9,7 @@
     "zh-CN": "DeepSeek 网页搜索与页面读取。"
   },
   "version": "1.0.0",
-  "author": "Reveric",
+  "author": "官方",
   "pluginApiVersion": "^1",
   "main": "dist/index.js",
   "settings": {

@@ -1,6 +1,6 @@
-# Reveric Desktop — UI Kit
+# 创作工作台 Desktop — UI Kit
 
-Pixel-fidelity recreation of the Reveric desktop client in HTML + React
+Pixel-fidelity recreation of the app's desktop client in HTML + React
 (via Babel-in-browser). Built from this repository’s Flutter source:
 
 - Theme: `lib/shared/theme/` (colors, typography, spacing, icons)

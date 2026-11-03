@@ -157,7 +157,7 @@ class McpOAuthCoordinator {
                 meta: sdk.buildProtocolRequestMeta(
                   protocolVersion: sdk.defaultProtocolVersion,
                   clientInfo: const sdk.Implementation(
-                    name: 'Reveric',
+                    name: 'Creative Workspace',
                     version: '1',
                   ),
                   clientCapabilities: const sdk.ClientCapabilities(),

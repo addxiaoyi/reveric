@@ -6,7 +6,7 @@
 //   ink               — two-layer mountain silhouette, tone picked from the name
 //   legacy            — current grey person icon, kept for comparison
 //
-// Tones are fixed muted hues (青 黛 赭 藕 苍): the Reveric palette is mostly
+// Tones are fixed muted hues (青 黛 赭 藕 苍): the app palette is mostly
 // ink-green, so semantic tokens alone would give near-identical avatars.
 // Backgrounds mix the tone into --surface, so light and dark both stay calm.
 const AVATAR_TONES = ["#4F8C7C", "#56688C", "#A7714F", "#93708A", "#76875A"];
@@ -25,8 +25,8 @@ function avatarGlyph(name) {
 const AVATAR_VARIANT =
   new URLSearchParams(location.search).get("avatar") || "mono";
 
-function DefaultAvatar({ name = "Reveric", size = 32, variant = AVATAR_VARIANT }) {
-  const seed = avatarHash(name || "Reveric");
+function DefaultAvatar({ name = "作者", size = 32, variant = AVATAR_VARIANT }) {
+  const seed = avatarHash(name || "作者");
   const tone = AVATAR_TONES[seed % AVATAR_TONES.length];
   const base = { width: size, height: size };
 

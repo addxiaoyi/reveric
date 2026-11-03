@@ -141,7 +141,7 @@ class McpClientAdapter implements McpConnection {
     // SDK raw logging can include remote payloads; diagnostics travel through the adapter.
     sdk.silenceMcpLogs();
     final client = sdk.McpClient(
-      const sdk.Implementation(name: 'Reveric', version: '1'),
+      const sdk.Implementation(name: 'Creative Workspace', version: '1'),
       options: sdk.McpClientOptions(
         capabilities: const sdk.ClientCapabilities(),
       ),

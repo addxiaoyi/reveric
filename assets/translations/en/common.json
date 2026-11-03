@@ -108,5 +108,6 @@
   "common.revoke": "Revoke",
   "common.resume": "Resume",
   "common.run_now": "Run now",
-  "common.grant": "Grant"
+  "common.grant": "Grant",
+  "common.author": "Author"
 }

@@ -164,9 +164,9 @@ void main() {
 
   group('PromptTemplateService.renderString - 真实场景模拟', () {
     test('系统 prompt 无变量', () {
-      final template = '你是 Reveric 的小说写作助手。\n\n请遵守规则。';
+      final template = '你是创作工作台的小说写作助手。\n\n请遵守规则。';
       final result = PromptTemplateService.renderString(template);
-      expect(result, '你是 Reveric 的小说写作助手。\n\n请遵守规则。');
+      expect(result, '你是创作工作台的小说写作助手。\n\n请遵守规则。');
     });
 
     test('多行技能内容作为变量渲染', () {

@@ -1,5 +1,5 @@
 #!/bin/bash
-# SQLite helper script for Reveric databases
+# SQLite helper script for the app databases
 # Usage: sqlite_helper.sh <command> [args...]
 
 set -e

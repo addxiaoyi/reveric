@@ -8,9 +8,11 @@
 
 import 'dart:io';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
+import '../localization/locale_keys.dart';
 import '../logger/app_logger.dart';
 
 final _log = AppLogger.forModule('Notification');
@@ -36,21 +38,18 @@ class SystemNotificationService {
 
   /// Android 通知渠道。渠道一经创建，其重要级别由系统接管，改代码不会生效，
   /// 因此这里一次性定为默认重要级别。
-  static const AndroidNotificationDetails _androidDetails =
-      AndroidNotificationDetails(
-        'reveric_default',
-        'Reveric',
-        channelDescription: '后台任务完成与失败提醒',
-        importance: Importance.defaultImportance,
-        priority: Priority.defaultPriority,
-      );
-
-  static const NotificationDetails _details = NotificationDetails(
-    android: _androidDetails,
-    iOS: DarwinNotificationDetails(),
-    macOS: DarwinNotificationDetails(),
-    linux: LinuxNotificationDetails(),
-    windows: WindowsNotificationDetails(),
+  static NotificationDetails get _details => NotificationDetails(
+    android: AndroidNotificationDetails(
+      'reveric_default',
+      tr(LocaleKeys.appTitle),
+      channelDescription: '后台任务完成与失败提醒',
+      importance: Importance.defaultImportance,
+      priority: Priority.defaultPriority,
+    ),
+    iOS: const DarwinNotificationDetails(),
+    macOS: const DarwinNotificationDetails(),
+    linux: const LinuxNotificationDetails(),
+    windows: const WindowsNotificationDetails(),
   );
 
   /// 初始化插件并注册点击回调。重复调用是幂等的。
@@ -62,22 +61,22 @@ class SystemNotificationService {
       return;
     }
     try {
-      const settings = InitializationSettings(
-        android: AndroidInitializationSettings('@mipmap/ic_launcher'),
+      final settings = InitializationSettings(
+        android: const AndroidInitializationSettings('@mipmap/ic_launcher'),
         // 权限在首次发送时按需申请，不在启动时打断用户。
-        iOS: DarwinInitializationSettings(
+        iOS: const DarwinInitializationSettings(
           requestAlertPermission: false,
           requestBadgePermission: false,
           requestSoundPermission: false,
         ),
-        macOS: DarwinInitializationSettings(
+        macOS: const DarwinInitializationSettings(
           requestAlertPermission: false,
           requestBadgePermission: false,
           requestSoundPermission: false,
         ),
-        linux: LinuxInitializationSettings(defaultActionName: 'Open'),
+        linux: const LinuxInitializationSettings(defaultActionName: 'Open'),
         windows: WindowsInitializationSettings(
-          appName: 'Reveric',
+          appName: tr(LocaleKeys.appTitle),
           appUserModelId: kDebugMode ? 'ai.reveric.debug' : 'ai.reveric',
           guid: kDebugMode
               ? '30c68781-e02c-4fab-a47e-c94e7d57fa2a'

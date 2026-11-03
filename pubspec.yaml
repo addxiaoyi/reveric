@@ -1,5 +1,5 @@
 name: reveric
-description: "A new Flutter project."
+description: "AI-native desktop creative workspace for long-form writing, screenplays, and short-form production."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -299,7 +299,7 @@ flutter_launcher_icons:
   remove_alpha_ios: true
 
 patrol:
-  app_name: Reveric
+  app_name: Creative Workspace
   android:
     package_name: ai.reveric.debug
   ios:

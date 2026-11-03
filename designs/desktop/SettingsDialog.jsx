@@ -209,7 +209,7 @@ function PlaceholderPanel({ name }) {
     <div className="m-form">
       <h3 className="m-heading" style={{ fontSize: 18 }}>{name}</h3>
       <p className="m-body-small">
-        本设计系统恢复的设置项仅展示外观与提供商部分，其他面板可参考 Reveric 源码 lib/desktop/pages/settings/ 进一步实现。
+        本设计系统恢复的设置项仅展示外观与提供商部分，其他面板可参考本应用源码 lib/desktop/pages/settings/ 进一步实现。
       </p>
     </div>
   );
@@ -221,7 +221,7 @@ function AboutPanel() {
       <div style={{ marginTop: 12, marginBottom: 12 }}>
         <Mark size={64} />
       </div>
-      <h3 className="m-heading">Reveric</h3>
+      <h3 className="m-heading">创作工作台</h3>
       <p className="m-body-small" style={{ maxWidth: 360 }}>
         AI 辅助小说创作软件。让 AI 承担可自动化的生成与润色工作，让作者专注于创意决策与质量把控。
       </p>

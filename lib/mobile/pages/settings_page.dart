@@ -60,7 +60,6 @@ import '../../shared/widgets/settings/backup_settings_section.dart';
 import '../../shared/widgets/settings/usage_settings_section.dart';
 import '../../shared/widgets/settings/usage_view.dart';
 import '../../shared/components/reveric_dialog.dart';
-import '../../shared/components/reveric_icon_button.dart';
 
 /// 从更新提醒直达现有关于详情页。
 Future<void> showMobileAboutPage(BuildContext context) {
@@ -390,20 +389,6 @@ class SettingsPage extends HookConsumerWidget {
                   context,
                   colors,
                   typo,
-                  icon: RevericIcons.qq_logo,
-                  tint: colors.accentAmber,
-                  label: context.t(LocaleKeys.settingsAboutJoinQqGroup),
-                  trailing: RevericIconButton(
-                    icon: RevericIcons.copy,
-                    tooltip: context.t(LocaleKeys.commonCopy),
-                    onPressed: () => copyQqGroupNumber(context),
-                  ),
-                  onTap: () => openQqGroup(context),
-                ),
-                _valueRow(
-                  context,
-                  colors,
-                  typo,
                   icon: RevericIcons.github_logo,
                   tint: colors.textSecondary,
                   label: context.t(LocaleKeys.settingsAboutGithubRepository),
@@ -457,7 +442,9 @@ class SettingsPage extends HookConsumerWidget {
     String avatarPath, {
     VoidCallback? onTap,
   }) {
-    final displayName = username.isNotEmpty ? username : 'Reveric';
+    final displayName = username.isNotEmpty
+        ? username
+        : context.t(LocaleKeys.commonAuthor);
     final resolvedAvatar = RevericPaths.resolveStored(avatarPath);
     const avatarSize = 52.0;
 

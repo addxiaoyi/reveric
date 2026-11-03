@@ -1,12 +1,8 @@
 <div align="center">
 
-# Reveric | 幻界
+# 创作工作台
 
 ### AI Native 桌面创作工作台，读懂整部作品，和你一起从小说写到成片
-
-<p align="center">
-  <a href="https://qm.qq.com/q/Ap8pfOWHDO"><img src="https://img.shields.io/badge/QQ%20%E4%BA%A4%E6%B5%81%E7%BE%A4-924148054-12B7F5?style=for-the-badge&logo=qq&logoColor=white&labelColor=0E7FC9" alt="加入 QQ 交流群" height="40"></a>
-</p>
 
 <p align="center">
   <a href="README.md">简体中文</a> •
@@ -25,63 +21,16 @@
 
 ---
 
-## 赞助
-
-<table width="100%">
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://88api.ai/sign-up?aff=5q8X">
-        <img src=".github/images/88api-logo.png" alt="88API Token 聚合平台" height="80"/>
-        <br/>
-        <strong>88API Token 聚合平台</strong>
-      </a>
-      <p align="center">
-        <a href="https://88api.ai/sign-up?aff=5q8X">
-          <img src=".github/images/88api-banner.png" alt="88API · 88api.ai" width="600"/>
-        </a>
-      </p>
-      <p align="left"><strong>感谢 88API Token 聚合平台赞助本项目！</strong></p>
-      <p align="left">88API 是一家由香港企业运营、面向开发者、创作者与 AI 应用用户的一站式多模型 API 平台，通过统一接口接入文本、图片、语音和视频模型，覆盖 AI 编程、智能翻译、内容创作、配音、图像生成和视频生成等常见工作流。平台提供高质量 DeepSeek 算力，支持国际主流付款方式，可提供发票，并提供企业级稳定服务。</p>
-      <p align="left">通过<a href="https://88api.ai/sign-up?aff=5q8X">专属链接注册</a>，可以获取专属赠送额度！</p>
-      <p align="left">
-        官网：<a href="https://88api.ai/">88api.ai</a><br/>
-        请求地址：<code>https://api.88api.ai</code>
-      </p>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="https://metaso.cn/minimax-h3/?s=Reveric">
-        <img src=".github/images/metaso-logo.png" alt="秘塔科技" height="80"/>
-        <br/>
-        <strong>MiniMax H3 视频生成 API｜秘塔科技</strong>
-      </a>
-      <p align="center">
-        <a href="https://metaso.cn/minimax-h3/?s=Reveric">
-          <img src=".github/images/metaso-banner.png" alt="秘塔科技 · metaso.cn" width="600"/>
-        </a>
-      </p>
-      <p align="left"><strong>感谢秘塔科技赞助本项目！</strong></p>
-      <p align="left">秘塔科技提供高性价比的 MiniMax H3 视频生成服务：<strong>768P 仅 0.09 元/秒，2K 仅 0.15 元/秒</strong>。支持 30 秒、支持原生 2K、音画同步，API 兼容 <strong>OpenAI 协议</strong>，同时支持 <strong>ComfyUI</strong>，无需自行部署 GPU。</p>
-      <p align="left">🎁 通过 <a href="https://metaso.cn/minimax-h3/?s=Reveric">Reveric 专属链接注册</a>，即可领取赠送额度及专属优惠。</p>
-      <p align="left">
-        官网：<a href="https://metaso.cn/minimax-h3/?s=Reveric">metaso.cn</a><br/>
-        请求地址：<code>https://metaso.cn/api/minimax</code>
-      </p>
-    </td>
-  </tr>
-</table>
-
----
-
 ## 项目简介
 
-**Reveric（幻界）是一个本地优先、以智能体为核心的桌面创作工作台，覆盖长篇小说、剧本改编与短剧/漫剧制片。** 整部作品保存在你的设备上，同时也是智能体的工作区：写章节、改剧本、铺分镜、调机位、剪成片，说一句话，它就在作品里动手完成。
+**创作工作台是一个本地优先、以智能体为核心的桌面创作工作台，覆盖长篇小说、剧本改编与短剧/漫剧制片。** 整部作品保存在你的设备上，同时也是智能体的工作区：写章节、改剧本、铺分镜、调机位、剪成片，说一句话，它就在作品里动手完成。
 
 - **按需读取整部作品**：智能体自己检索需要的章节和设定，不用把人物小传复制进对话框。
 - **智能体操作所有模块**：小说、剧本、画布、3D 导演台、剪辑台，智能体都能直接上手操作。
 - **素材自动生成**：角色定妆、分镜参考图、视频片段与音频，由智能体调用模型直接生成到画布上。
 - **本地优先，模型自选（BYOK）**：作品数据保存在本地 SQLite，模型直连 OpenAI、Anthropic、Gemini、DeepSeek、Seedance、H3 或自建网关。
 
-![Reveric 主界面](.github/images/home.png)
+![主界面](.github/images/home.png)
 
 ---
 
@@ -178,7 +127,7 @@
 
 ## 模型支持
 
-Reveric 坚持 Local-First 与 BYOK（Bring Your Own Key）理念。无论是文学创作还是短剧制片，创作者对模型选择拥有完全自主权。
+本项目坚持 Local-First 与 BYOK（Bring Your Own Key）理念。无论是文学创作还是短剧制片，创作者对模型选择拥有完全自主权。
 
 ### 1. 文本与推理模型 (LLM & Reasoning)
 
@@ -193,7 +142,7 @@ Reveric 坚持 Local-First 与 BYOK（Bring Your Own Key）理念。无论是文
 
 ### 2. 图像生成模型 (Image Generation)
 
-Reveric 在无限画布与故事图鉴中深度支持主流图像生成模型，用于角色定妆、分镜视觉参考、场景道具与概念插画创作：
+本项目在无限画布与故事图鉴中深度支持主流图像生成模型，用于角色定妆、分镜视觉参考、场景道具与概念插画创作：
 
 | 图像模型 / 厂商 | 代表型号 | 核心控制能力 | 接入方式 |
 | :--- | :--- | :--- | :--- |
@@ -205,7 +154,7 @@ Reveric 在无限画布与故事图鉴中深度支持主流图像生成模型，
 
 ### 3. 视频生成模型 (Video Generation)
 
-Reveric 为短剧制片与无限画布深度集成了主流视频生成大模型，支持首尾帧锁定、多图参考、多画幅比例与运镜调度：
+本项目为短剧制片与无限画布深度集成了主流视频生成大模型，支持首尾帧锁定、多图参考、多画幅比例与运镜调度：
 
 | 视频模型 / 厂商 | 代表型号 | 核心控制能力 | 接入方式 |
 | :--- | :--- | :--- | :--- |
@@ -219,7 +168,7 @@ Reveric 为短剧制片与无限画布深度集成了主流视频生成大模型
 
 ## 下载安装
 
-在 [Releases](https://github.com/looplj/reveric/releases/latest) 页面获取对应平台的预编译安装包：
+在 [Releases](https://github.com/addxiaoyi/reveric/releases/latest) 页面获取对应平台的预编译安装包：
 
 | 操作系统 | 推荐环境 | 安装包格式 | 说明 |
 | :--- | :--- | :--- | :--- |
@@ -248,7 +197,7 @@ Reveric 为短剧制片与无限画布深度集成了主流视频生成大模型
 
 ## 开发者指南
 
-Reveric 采用 Flutter 与现代跨平台架构构建，欢迎社区开发者共同探索与改进。
+本项目采用 Flutter 与现代跨平台架构构建，欢迎社区开发者共同探索与改进。
 
 ### 技术栈
 
@@ -262,7 +211,7 @@ Reveric 采用 Flutter 与现代跨平台架构构建，欢迎社区开发者共
 
 ```bash
 # 1. 克隆代码仓库
-git clone https://github.com/looplj/reveric.git
+git clone https://github.com/addxiaoyi/reveric.git
 cd reveric
 
 # 2. 安装项目依赖 (推荐使用 FVM 管理 Flutter SDK)
@@ -286,34 +235,20 @@ make build-windows-release # 构建 Windows 客户端
 
 ## 反馈与交流
 
-### 问题反馈
-
-遇到缺陷或有功能建议，请提交到 [GitHub Issues](https://github.com/looplj/reveric/issues)。
-
-### QQ 交流群
-
-扫码或[点击链接](https://qm.qq.com/q/Ap8pfOWHDO)加入（群号：924148054），交流 AI 小说与短剧创作、分享使用心得。
-
-<p>
-  <a href="https://qm.qq.com/q/Ap8pfOWHDO"><img src="assets/images/qq-group.jpg" alt="QQ 群二维码" width="240"/></a>
-</p>
-
-### 其他社区
-
-- [LINUX DO 社区](https://linux.do/)：学 AI、交流创作经验
+遇到缺陷或有功能建议，请提交到 [GitHub Issues](https://github.com/addxiaoyi/reveric/issues)。
 
 ---
 
 ## 许可证
 
-本项目基于 [AGPLv3](./LICENSE) 授权开源，附加条款与第三方依赖声明详见 [NOTICES](./NOTICES)。商业授权请联系 [bababaa261@gmail.com](mailto:bababaa261@gmail.com)。
+本项目基于 [AGPLv3](./LICENSE) 授权开源，附加条款与第三方依赖声明详见 [NOTICES](./NOTICES)。商业授权请通过仓库 Issues 联系。
 
 ---
 
 <div align="center">
 
-**Reveric | 幻界** · 让智能体成为你的创作搭档
+**创作工作台** · 让智能体成为你的创作搭档
 
-[主页](https://github.com/looplj/reveric) • [发行版](https://github.com/looplj/reveric/releases) • [问题反馈](https://github.com/looplj/reveric/issues) • [QQ 群](https://qm.qq.com/q/Ap8pfOWHDO)
+[主页](https://github.com/addxiaoyi/reveric) • [发行版](https://github.com/addxiaoyi/reveric/releases) • [问题反馈](https://github.com/addxiaoyi/reveric/issues)
 
 </div>

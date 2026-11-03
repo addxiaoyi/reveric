@@ -33,7 +33,7 @@ python3 -m http.server 4312 --directory site/dist
 
 ## 更新截图
 
-原始截图用 Reveric 深色主题、窗口 1440×900、按 2x 截取，放进本地的 `site/screenshots/`，用其中的 `process_screenshots.py` 打码后输出到 `designs/website/assets/`。
+原始截图用应用深色主题、窗口 1440×900、按 2x 截取，放进本地的 `site/screenshots/`，用其中的 `process_screenshots.py` 打码后输出到 `designs/website/assets/`。
 
 ## 部署
 

@@ -159,7 +159,7 @@ void main() {
           await tester.ensureVisible(find.text('Go to METASO · Get API key'));
           await tester.tap(find.text('Go to METASO · Get API key'));
           await tester.pumpAndSettle();
-          expect(launched, ['https://metaso.cn/minimax-h3/?s=Reveric']);
+          expect(launched, ['https://metaso.cn/minimax-h3/']);
           final keyField = find.descendant(
             of: find.widgetWithText(RevericTextField, 'API Key'),
             matching: find.byType(EditableText),

@@ -1,4 +1,4 @@
-// 职责: Debug provider 流注入器 — 在真实 Reveric provider 响应上制造可重复的异常终态
+// 职责: Debug provider 流注入器 — 在真实 provider 响应上制造可重复的异常终态
 // 关联文件:
 //   lib/shared/services/debug/debug_ai_provider.dart
 //   lib/shared/agent/client.dart

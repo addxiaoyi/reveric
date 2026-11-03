@@ -6,7 +6,7 @@
     "en": "Searches the web with Baidu and reads web pages. Search may be unreliable because of security checks or anti-scraping limits."
   },
   "version": "1.0.0",
-  "author": "Reveric",
+  "author": "官方",
   "pluginApiVersion": "^1",
   "main": "dist/index.js"
 }

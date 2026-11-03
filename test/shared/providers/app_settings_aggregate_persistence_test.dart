@@ -454,7 +454,7 @@ void main() {
         serverUrl: 'https://dav.example.com/root',
         username: 'author',
         password: 'secret',
-        remoteDirectory: '/Reveric/Test',
+        remoteDirectory: '/Creative Workspace/Test',
       ),
     );
     await notifier.setUsername('Author');
@@ -495,7 +495,7 @@ void main() {
     expect(storage.webDavEnabled, isTrue);
     expect(storage.webDavServerUrl, 'https://dav.example.com/root/');
     expect(storage.webDavUsername, 'author');
-    expect(storage.webDavRemoteDirectory, '/Reveric/Test');
+    expect(storage.webDavRemoteDirectory, '/Creative Workspace/Test');
     expect(storage.webDavPassword, 'secret');
 
     final profile = LocalProfileSettingsData.decode(

@@ -1,4 +1,4 @@
-// Reveric plugin SDK. These declarations and their comments are the
+// App plugin SDK. These declarations and their comments are the
 // authoritative contract between a plugin and the Host.
 //
 // Lifecycle

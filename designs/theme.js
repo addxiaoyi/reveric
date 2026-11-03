@@ -1,5 +1,5 @@
 /* =========================================================================
-   Reveric Design Mockups — Theme switcher (shared by desktop + mobile)
+   Design Mockups — Theme switcher (shared by desktop + mobile)
 
    Mirrors Flutter AppTheme × AppThemeMode:
      palette: reveric | classic | ivory
@@ -27,7 +27,7 @@
   /* Preview swatches follow each palette's light preset, like the Flutter
      appearance section's _buildThemePreview. */
   var PALETTES = [
-    { key: "reveric", label: "Reveric", desc: "玉白底色，墨玉落笔",
+    { key: "reveric", label: "默认", desc: "玉白底色，墨玉落笔",
       preview: { canvas: "#F2F6F4", surface: "#FFFFFF", accent: "#1C2623", text: "#141A18" } },
     { key: "classic", label: "经典", desc: "极简、永恒、高对比度",
       preview: { canvas: "#FFFFFF", surface: "#FAFAFA", accent: "#000000", text: "#000000" } },

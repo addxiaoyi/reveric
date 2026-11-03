@@ -1,4 +1,4 @@
-// 职责: Reveric 通用文本输入 — 单行/多行文本框，可选标签与辅助说明
+// 职责: 通用文本输入 — 单行/多行文本框，可选标签与辅助说明
 // 关联文件:
 //   lib/shared/components/reveric_input_decoration.dart
 //   lib/shared/theme/theme.dart

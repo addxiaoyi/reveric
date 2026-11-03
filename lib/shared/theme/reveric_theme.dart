@@ -1,4 +1,4 @@
-// 职责: 将 Reveric 颜色、排版和间距 token 组合成 Flutter ThemeData 与可继承主题上下文。
+// 职责: 将颜色、排版和间距 token 组合成 Flutter ThemeData 与可继承主题上下文。
 // 关联文件:
 //   lib/shared/theme/reveric_colors.dart
 //   lib/shared/theme/reveric_typography.dart
@@ -22,7 +22,7 @@ class RevericThemeData {
     required this.typography,
   });
 
-  /// Reveric — 玉白 · 墨玉.
+  /// 默认主题 — 玉白 · 墨玉.
   static const reveric = RevericThemeData(
     brightness: Brightness.light,
     colors: RevericColors.reveric,

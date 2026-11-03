@@ -12,6 +12,8 @@ import '../../shared/widgets/user_profile_edit_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../shared/localization/app_localization.dart';
+import '../../shared/localization/locale_keys.dart';
 import '../../shared/providers/settings_providers.dart';
 import '../../shared/theme/theme.dart';
 import '../../shared/utils/storage_paths.dart';
@@ -45,7 +47,7 @@ class UserProfileBar extends ConsumerWidget {
       data: (settings) {
         final username = settings.username.isNotEmpty
             ? settings.username
-            : 'Reveric';
+            : context.t(LocaleKeys.commonAuthor);
         final resolvedAvatar = RevericPaths.resolveStored(settings.avatarPath);
 
         final avatarSize = switch (mode) {

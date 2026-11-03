@@ -1,5 +1,5 @@
 /* =========================================================================
-   Reveric Design Mockups — Color themes (shared by desktop + mobile)
+   Design Mockups — Color themes (shared by desktop + mobile)
 
    Palette set mirrors Flutter AppTheme: reveric / classic / ivory, each with
    a light and dark preset. Semantic token names map 1:1 to RevericColors
@@ -18,7 +18,7 @@
    color-mix(in srgb, var(--accent) 12%, transparent).
    ========================================================================= */
 
-/* ---- Reveric (default) · light — 玉白 · 墨玉 --------------------------
+/* ---- Default · light — 玉白 · 墨玉 ------------------------------------
    带一丝薄荷的冷白底（canvas）托起纯白卡片（surface），卡片靠柔和投影而非
    描边分层。近黑墨玉担主操作与最强调元素；翡翠绿（accent-amber 槽位）只用于
    AI、状态与小面积点缀，不做正文色。 */
@@ -66,7 +66,7 @@
   --glass:       rgba(242, 246, 244, 0.86);
 }
 
-/* ---- Reveric · dark — 主操作反转为玉白，翡翠提亮 ---------------------- */
+/* ---- Default · dark — 主操作反转为玉白，翡翠提亮 ---------------------- */
 :root[data-theme="dark"],
 :root[data-palette="reveric"][data-theme="dark"] {
   color-scheme: dark;

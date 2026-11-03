@@ -1,6 +1,6 @@
-# Reveric AI
+# 创作工作台 AI
 
-This context defines the language used around Reveric's AI agent and prompt behavior.
+This context defines the language used around the app's AI agent and prompt behavior.
 
 ## Language
 
@@ -238,12 +238,12 @@ An independent agent used by a Prompt Regression Evaluation to score another age
 _Avoid_: self-check, verification hook, reviewer
 
 **Structured Run Command**:
-A Reveric command executed through the Run tool using JSON fields: `command` names the command namespace, `subcommand` names the action, and `options` carries action parameters.
+A command executed through the Run tool using JSON fields: `command` names the command namespace, `subcommand` names the action, and `options` carries action parameters.
 
 ### Remote Interaction
 
 **Remote Channel**:
-A non-desktop entry point into Reveric's agent system, such as WeChat in V1. A Remote Channel is transport-only — it carries messages between the user and the Remote Assistant, and all intelligence lives in the agent. The Remote Channel is not a Chat Subagent and does not delegate to the Chat Orchestrator.
+A non-desktop entry point into the app's agent system, such as WeChat in V1. A Remote Channel is transport-only — it carries messages between the user and the Remote Assistant, and all intelligence lives in the agent. The Remote Channel is not a Chat Subagent and does not delegate to the Chat Orchestrator.
 _Avoid_: bridge, IM adapter, messaging integration, remote chat
 
 **Remote Assistant**:
@@ -415,7 +415,7 @@ _Avoid_: signed-in account, server identity
 **AI Token Usage**:
 The input, output, cache-read, cache-write, and reasoning tokens reported by
 user-configured AI providers. Usage records describe local activity; they do
-not represent a Reveric balance, subscription, or payment.
+not represent an account balance, subscription, or payment.
 _Avoid_: credits, wallet balance, redemption
 
 ### Skill Marketplace

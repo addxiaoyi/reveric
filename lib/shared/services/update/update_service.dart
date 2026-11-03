@@ -346,7 +346,7 @@ class UpdateService {
   Future<bool> _applyWindows(File installerFile, String exePath) async {
     // Windows 会锁住正在运行的 exe/dll，且当前安装器保留 VC++ redistributable
     // 和 admin 安装权限；因此更新必须交给 Inno Setup 安装器处理，不能在
-    // Reveric 进程内解压 zip 后覆盖安装目录。
+    // 应用进程内解压 zip 后覆盖安装目录。
     final ext = p.extension(installerFile.path).toLowerCase();
     if (ext != '.exe') {
       _log.warning(

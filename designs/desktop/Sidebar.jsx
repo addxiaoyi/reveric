@@ -61,7 +61,7 @@ function RecentSessions({ sessions }) {
 const QQ_GROUP_NUMBER = "924148054";
 // 与 lib/shared/app_config.dart revericQqGroupJoinUrl / revericGitHubRepoUrl 一致。
 const QQ_GROUP_JOIN_URL = "https://qm.qq.com/q/Ap8pfOWHDO";
-const GITHUB_REPO_URL = "https://github.com/looplj/reveric";
+const GITHUB_REPO_URL = "https://github.com/addxiaoyi/reveric";
 
 // QQ 群是主入口：带文字，比纯图标更容易被看到；群号只提供复制。GitHub 退为图标按钮。
 function CommunityRow() {

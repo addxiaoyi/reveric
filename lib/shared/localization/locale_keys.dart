@@ -2130,6 +2130,7 @@ abstract final class LocaleKeys {
   static const commonContent = 'common.content';
   static const commonContinue = 'common.continue';
   static const commonContinueInBackground = 'common.continue_in_background';
+  static const commonAuthor = 'common.author';
   static const commonCopy = 'common.copy';
   static const commonCopied = 'common.copied';
   static const commonCover = 'common.cover';
@@ -4986,13 +4987,8 @@ abstract final class LocaleKeys {
       'settings.about_open_logs_description';
   static const settingsAboutOpenStorageFailed =
       'settings.about_open_storage_failed';
-  static const settingsAboutFeedback = 'settings.about_feedback';
-  static const settingsAboutFeedbackDescription =
-      'settings.about_feedback_description';
-  static const settingsAboutJoinQqGroup = 'settings.about_join_qq_group';
   static const settingsAboutGithubRepository =
       'settings.about_github_repository';
-  static const settingsAboutQqOpenFailed = 'settings.about_qq_open_failed';
   static const settingsAboutOpenSource = 'settings.about_open_source';
   static const settingsAboutOpenSourceDescription =
       'settings.about_open_source_description';

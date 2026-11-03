@@ -1,4 +1,4 @@
-// 职责: Reveric 通用「…」更多操作按钮 — 点击在按钮下方弹出 Reveric 上下文菜单
+// 职责: 通用「…」更多操作按钮 — 点击在按钮下方弹出上下文菜单
 // 关联文件:
 //   lib/shared/components/reveric_context_menu.dart
 //   lib/shared/theme/theme.dart

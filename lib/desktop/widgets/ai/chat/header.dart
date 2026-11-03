@@ -82,7 +82,7 @@ class ChatHeader extends ConsumerWidget {
     final providerName = sessionState.providerId != null
         ? aiSettings.findConfigById(sessionState.providerId!)?.displayName
         : null;
-    // 会话存的是 model id：优先解析为模型目录的展示名（Reveric 渠道），
+    // 会话存的是 model id：优先解析为模型目录的展示名（内置渠道），
     // 解析不到（provider 未配置或模型已下线）时回退原始 id。
     final availableModels = ref.watch(availableAiModelsProvider);
     final sessionProviderId = sessionState.providerId;

@@ -1,4 +1,4 @@
-// 职责: Reveric 输入控件 — 提供设置/属性面板中的 inline 输入与动作组合。
+// 职责: 输入控件 — 提供设置/属性面板中的 inline 输入与动作组合。
 // 关联文件:
 //   lib/shared/components/reveric_input_decoration.dart
 //   lib/shared/theme/theme.dart

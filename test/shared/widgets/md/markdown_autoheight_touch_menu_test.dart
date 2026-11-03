@@ -32,7 +32,7 @@ void main() {
   // 单独文件：同一进程第二个 EasyLocalization `_wrap` 会拿到空子树。
   testWidgets('autoHeight 短字段全文选中时浮动菜单可点按，不被编辑器裁剪', (tester) async {
     const markdown =
-        '30 岁，连续创业者，此前做过两个失败的创业项目。擅长资本运作和人脉经营，但缺乏真正的技术理解。在创业大赛中窃取 Reveric 的创意。';
+        '30 岁，连续创业者，此前做过两个失败的创业项目。擅长资本运作和人脉经营，但缺乏真正的技术理解。在创业大赛中窃取创作工作台的创意。';
     String? clipboardText;
     _mockClipboard((text) => clipboardText = text);
     final controller = TextEditingController(text: markdown);

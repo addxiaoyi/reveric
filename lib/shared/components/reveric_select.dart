@@ -1,4 +1,4 @@
-// 职责: Reveric 通用下拉选择 — 自定义触发器 + 浮层菜单，支持图标/标题/副标题富选项
+// 职责: 通用下拉选择 — 自定义触发器 + 浮层菜单，支持图标/标题/副标题富选项
 // 关联文件:
 //   lib/shared/theme/theme.dart
 //   lib/shared/components/reveric_dropdowns.dart

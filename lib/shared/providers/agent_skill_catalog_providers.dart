@@ -48,7 +48,7 @@ final skillHttpClientFactoryProvider = Provider<Future<Dio> Function()>((ref) {
       settings.networkProxy,
       options: BaseOptions(
         connectTimeout: const Duration(seconds: 10),
-        headers: {'User-Agent': 'Reveric-Skills'},
+        headers: {'User-Agent': 'Creative-Workspace-Skills'},
       ),
     );
   };

@@ -1,4 +1,4 @@
-// 职责: 定义 Reveric 文字样式 token，并提供桌面（标题无衬线、正文 Georgia）与移动端系统字体两套排版预设。
+// 职责: 定义文字样式 token，并提供桌面（标题无衬线、正文 Georgia）与移动端系统字体两套排版预设。
 // 关联文件:
 //   lib/shared/theme/reveric_theme.dart
 //   designs/SYSTEM.md

@@ -1,5 +1,5 @@
 // Manuscript editor — top breadcrumb toolbar, chapter meta, 章节大纲
-// summary card, body, status bar. Matches the actual Reveric editor view.
+// summary card, body, status bar. Matches the actual editor view.
 // 正文选区批注（选区工具条 + 浮动气泡）见 Comments.jsx / comments.css。
 
 function EditorToolbar({ novelTitle, chapter, onSave }) {

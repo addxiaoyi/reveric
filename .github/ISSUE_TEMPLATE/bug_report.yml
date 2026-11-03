@@ -1,11 +1,11 @@
 name: 错误报告
-description: 报告 Reveric 的崩溃、错误或非预期行为
+description: 报告创作工作台的崩溃、错误或非预期行为
 title: "[错误] "
 body:
   - type: markdown
     attributes:
       value: |
-        提交前请搜索[已有问题](https://github.com/looplj/reveric/issues)。
+        提交前请搜索[已有问题](https://github.com/addxiaoyi/reveric/issues)。
 
         反馈内容公开。请移除截图和日志中的 API 密钥、未公开的作品正文及个人信息，不要在此上传数据库或完整诊断包。
 
@@ -40,7 +40,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Reveric 版本
+      label: 创作工作台 版本
       description: 请填写完整版本号；源码构建请补充提交哈希。
     validations:
       required: true

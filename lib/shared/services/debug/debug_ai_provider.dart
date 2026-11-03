@@ -1,4 +1,4 @@
-// 职责: Debug-only Reveric provider 配置 — 暴露真实模型的可控异常注入入口
+// 职责: Debug-only provider 配置 — 暴露真实模型的可控异常注入入口
 // 关联文件:
 //   lib/shared/models/ai_provider.dart
 //   lib/shared/providers/settings_providers.dart

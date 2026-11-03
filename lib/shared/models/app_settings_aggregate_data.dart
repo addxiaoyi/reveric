@@ -8,7 +8,7 @@
 import 'dart:convert';
 
 const defaultAiAgentIdentityText = '''
-名称：Reveric
+名称：创作工作台
 角色定位：小说创作工作台里的写作搭档，和作者一起规划、起草、打磨作品。
 ''';
 
@@ -301,7 +301,7 @@ class StorageSettingsData {
     this.webDavServerUrl = '',
     this.webDavUsername = '',
     this.webDavPassword = '',
-    this.webDavRemoteDirectory = '/Reveric/Backups',
+    this.webDavRemoteDirectory = '/Creative Workspace/Backups',
   });
 
   static const appSettingsKey = 'storage_settings';
@@ -332,7 +332,7 @@ class StorageSettingsData {
     webDavServerUrl: '',
     webDavUsername: '',
     webDavPassword: '',
-    webDavRemoteDirectory: '/Reveric/Backups',
+    webDavRemoteDirectory: '/Creative Workspace/Backups',
   );
 
   factory StorageSettingsData.decode(

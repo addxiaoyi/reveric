@@ -30,7 +30,7 @@ BASE ?= $(shell git rev-parse --abbrev-ref HEAD)
 .PHONY: build-all build-all-release run-macos run-windows run-linux clean clean-build codegen deps check-agent-rules
 
 help: ## 显示帮助信息
-	@echo "Reveric 构建与管理命令"
+	@echo "创作工作台 构建与管理命令"
 	@echo "======================="
 	@echo ""
 	@echo "用法: make <command>"
@@ -144,14 +144,14 @@ build-macos: ## 构建 macOS 客户端 (debug)
 	@bash third/fjs/tool/build_runtime.sh
 	@bash third/fvp/macos/setup.sh
 	@fvm flutter build macos --debug
-	@echo "✅ macOS 构建完成: $(BUILD_DIR)/macos/Build/Products/Debug/Reveric.app"
+	@echo "✅ macOS 构建完成: $(BUILD_DIR)/macos/Build/Products/Debug/Creative Workspace.app"
 
 build-macos-release: ## 构建 macOS 客户端 (release)
 	@echo "🍎 构建 macOS 客户端 (release)..."
 	@bash third/fjs/tool/build_runtime.sh
 	@bash third/fvp/macos/setup.sh
 	@fvm flutter build macos --release
-	@echo "✅ macOS 构建完成: $(BUILD_DIR)/macos/Build/Products/Release/Reveric.app"
+	@echo "✅ macOS 构建完成: $(BUILD_DIR)/macos/Build/Products/Release/Creative Workspace.app"
 
 build-windows: ## 构建 Windows 客户端 (debug)
 	@echo "🪟 构建 Windows 客户端 (debug)..."

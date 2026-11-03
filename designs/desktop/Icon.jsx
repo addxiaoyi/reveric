@@ -54,7 +54,7 @@ function Icon({ name, size = 16, color, style, className }) {
   );
 }
 
-// Reveric brand mark — rendered inline (no network) so the chrome titlebar
+// Brand mark — rendered inline (no network) so the chrome titlebar
 // can show it at any size.
 function Mark({ size = 18, style }) {
   return (

@@ -34,10 +34,10 @@ void main() {
     expect(find.text('L'), findsOneWidget);
   });
 
-  testWidgets('falls back to the app name initial when nickname is blank', (
+  testWidgets('falls back to a placeholder initial when nickname is blank', (
     tester,
   ) async {
     await tester.pumpWidget(_wrap(''));
-    expect(find.text('R'), findsOneWidget);
+    expect(find.text('?'), findsOneWidget);
   });
 }

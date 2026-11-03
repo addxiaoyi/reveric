@@ -174,7 +174,7 @@ void main() {
         expect(content, contains('[DEBUG] [GuardTest] first enabled marker'));
         expect(content, contains('[TRACE] [GuardTest] second enabled marker'));
         expect(content, isNot(contains('disabled marker')));
-        expect('=== Reveric Startup Log ==='.allMatches(content), hasLength(1));
+        expect('=== Startup Log ==='.allMatches(content), hasLength(1));
       },
     );
   });

@@ -88,7 +88,7 @@ final A2uiSample galleryA2uiSample = A2uiSample(
         _text('title', '# 组件总览'),
         _text(
           'intro',
-          '所有组件都包装 Reveric 设计系统组件。提交按钮在**必填项**填好前保持禁用。',
+          '所有组件都包装应用的设计系统组件。提交按钮在**必填项**填好前保持禁用。',
           variant: 'caption',
         ),
         {'id': 'display_card', 'component': 'Card', 'child': 'display'},

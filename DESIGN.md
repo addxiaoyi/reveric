@@ -1,5 +1,5 @@
 ---
-name: "Reveric"
+name: "创作工作台"
 description: "A warm, literary product UI for AI-assisted long-form fiction writing."
 colors:
   canvas: "#FFFBF5"
@@ -110,13 +110,13 @@ components:
     padding: "24px"
 ---
 
-# Design System: Reveric
+# Design System: 创作工作台
 
 ## 1. Overview
 
 **Creative North Star: "The Cartographer's Desk"**
 
-Reveric is a product interface for long-form writing, so the design serves repeated concentration rather than first-impression spectacle. The surface should feel like a careful desk for planning, drafting, revising, and consulting AI agents: warm, legible, structured, and quiet.
+The app is a product interface for long-form writing, so the design serves repeated concentration rather than first-impression spectacle. The surface should feel like a careful desk for planning, drafting, revising, and consulting AI agents: warm, legible, structured, and quiet.
 
 The default visual language is literary and cartographic. Parchment-like surfaces, sepia ink, aged brass accents, and Georgia text create a manuscript atmosphere, while compact sans-serif UI controls keep management workflows precise.
 
@@ -194,7 +194,7 @@ The palette is warm, literary, and intentionally low-glare, built from parchment
 
 ## 4. Elevation
 
-Reveric is flat by default. Depth is conveyed through tonal layers, borders, selected states, and spacing rather than shadows. The app should feel like stacked paper and panels, not floating glass.
+The app is flat by default. Depth is conveyed through tonal layers, borders, selected states, and spacing rather than shadows. The app should feel like stacked paper and panels, not floating glass.
 
 ### Shadow Vocabulary
 

@@ -1,4 +1,4 @@
-// 职责: Reveric 通用标签编辑器 — 展示已有标签 chip、内联添加/删除，供表单复用。
+// 职责: 通用标签编辑器 — 展示已有标签 chip、内联添加/删除，供表单复用。
 //   支持可选 suggestions 参数启用 Autocomplete 下拉建议（由调用方提供）。
 // 关联文件:
 //   lib/shared/components/reveric_text_field.dart

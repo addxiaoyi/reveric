@@ -1,4 +1,4 @@
-// 职责: Reveric 表单装饰 — 提供 text field 与 form dropdown 共享的 InputDecoration。
+// 职责: 表单装饰 — 提供 text field 与 form dropdown 共享的 InputDecoration。
 // 关联文件:
 //   lib/shared/components/reveric_dropdowns.dart
 //   lib/shared/theme/theme.dart

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# build-macos.sh — 本地构建 Reveric macOS 安装包 (DMG + ZIP)
+# build-macos.sh — 本地构建 创作工作台 macOS 安装包 (DMG + ZIP)
 #
 # 镜像 CI (.github/workflows/build.yaml) 的 macOS 打包流程：
 #   1. 安装 appdmg (npm)

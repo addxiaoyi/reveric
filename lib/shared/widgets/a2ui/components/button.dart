@@ -1,4 +1,4 @@
-// 职责: A2UI Button 的 builder — 按子组件（Text 或 Icon）选择 Reveric 按钮，处理 checks 禁用与 action 进行中状态。
+// 职责: A2UI Button 的 builder — 按子组件（Text 或 Icon）选择应用按钮，处理 checks 禁用与 action 进行中状态。
 // 关联文件:
 //   lib/shared/widgets/a2ui/catalog.dart
 //   lib/shared/widgets/a2ui/component.dart

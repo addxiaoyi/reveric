@@ -1,4 +1,4 @@
-// 职责: 展示应用版本、更新检查、本地日志与诊断上传、QQ 群交流与开源署名入口，供桌面和移动端设置使用。
+// 职责: 展示应用版本、更新检查、本地日志与诊断上传与开源署名入口，供桌面和移动端设置使用。
 // 关联文件:
 //   lib/shared/components/reveric_button.dart
 //   lib/shared/providers/update_providers.dart
@@ -20,11 +20,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../components/reveric_button.dart';
 import '../../app_config.dart'
-    show
-        appVersion,
-        revericAttribution,
-        revericGitHubRepoUrl,
-        revericQqGroupNumber;
+    show appVersion, revericAttribution, revericGitHubRepoUrl;
 import '../../components/dialog_feedback.dart';
 import '../../localization/app_localization.dart';
 import '../../localization/locale_keys.dart';
@@ -33,7 +29,7 @@ import '../../providers/update_providers.dart';
 import '../../services/update.dart';
 import '../../theme/theme.dart';
 
-/// 关于设置 section：版本、更新、本地日志与诊断上传、QQ 群交流和开源署名。
+/// 关于设置 section：版本、更新、本地日志与诊断上传和开源署名。
 class AboutSettingsSection extends HookConsumerWidget {
   const AboutSettingsSection({super.key, this.compact = false});
 
@@ -101,26 +97,6 @@ class AboutSettingsSection extends HookConsumerWidget {
           ),
           SizedBox(height: actionGap),
           const DiagnosticsUploadButton(),
-          SizedBox(height: sectionGap),
-          _buildSectionTitle(
-            context,
-            typo,
-            colors,
-            LocaleKeys.settingsAboutFeedback,
-          ),
-          SizedBox(height: descriptionGap),
-          Text(
-            context.t(LocaleKeys.settingsAboutFeedbackDescription),
-            style: _descriptionStyle(typo, colors),
-          ),
-          SizedBox(height: actionGap),
-          _buildExternalLinkButton(
-            colors,
-            typo,
-            label:
-                '${context.t(LocaleKeys.settingsAboutJoinQqGroup)} · $revericQqGroupNumber',
-            onTap: () => openQqGroup(context),
-          ),
           SizedBox(height: sectionGap),
           _buildSectionTitle(
             context,

@@ -1,32 +1,57 @@
 // 职责: 验证品牌加载动画的生命周期（入场→循环→完成后淡出）与关键帧排版。
 // 关联文件:
 //   lib/shared/widgets/brand_loader.dart
-//   assets/logo/reveric_wordmark.png
 // 遵循的 Rules:
 //   .agents/rules/testing.md
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reveric/shared/localization/merging_asset_loader.dart';
 import 'package:reveric/shared/theme/theme.dart';
 import 'package:reveric/shared/widgets/brand_loader.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 Widget _wrap(Widget child, {bool dark = false, bool reduceMotion = false}) {
   final data = dark
       ? RevericThemeData.revericDark
       : RevericThemeData.reveric;
-  return MaterialApp(
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(brightness: dark ? Brightness.dark : Brightness.light),
-    builder: (context, child) => MediaQuery(
-      data: MediaQuery.of(context).copyWith(disableAnimations: reduceMotion),
-      child: RevericTheme(data: data, child: child!),
+  return EasyLocalization(
+    supportedLocales: const [Locale('en')],
+    path: 'assets/translations',
+    assetLoader: const MergingAssetLoader(),
+    fallbackLocale: const Locale('en'),
+    startLocale: const Locale('en'),
+    child: Builder(
+      builder: (context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
+        theme: ThemeData(brightness: dark ? Brightness.dark : Brightness.light),
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(context).copyWith(disableAnimations: reduceMotion),
+          child: RevericTheme(data: data, child: child!),
+        ),
+        home: RepaintBoundary(key: const ValueKey('capture'), child: child),
+      ),
     ),
-    home: RepaintBoundary(key: const ValueKey('capture'), child: child),
   );
 }
 
 void main() {
+  setUpAll(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    SharedPreferences.setMockInitialValues({});
+    await EasyLocalization.ensureInitialized();
+  });
+
+  setUp(() {
+    rootBundle.clear();
+  });
+
   testWidgets('done during intro waits for intro, then exits', (tester) async {
     var exited = 0;
     await tester.pumpWidget(
@@ -138,12 +163,6 @@ void main() {
       addTearDown(tester.view.reset);
 
       await tester.pumpWidget(_wrap(const BrandLoader(), dark: dark));
-      await tester.runAsync(
-        () => precacheImage(
-          const AssetImage('assets/logo/reveric_wordmark.png'),
-          tester.element(find.byType(BrandLoader)),
-        ),
-      );
 
       // 描线中
       await tester.pump(const Duration(milliseconds: 600));

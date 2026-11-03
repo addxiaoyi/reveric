@@ -127,7 +127,7 @@ class MobileOnboardingPage extends HookConsumerWidget {
                       text: '${context.t(LocaleKeys.onboardingBrandWelcome)} ',
                     ),
                     TextSpan(
-                      text: 'Reveric',
+                      text: context.t(LocaleKeys.appTitle),
                       style: typo.display.copyWith(
                         color: colors.accentWarm,
                         fontWeight: FontWeight.w800,

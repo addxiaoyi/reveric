@@ -1,5 +1,5 @@
 /* =========================================================================
-   Reveric Design System — Tokens
+   创作工作台 Design System — Tokens
    Source of truth: lib/shared/theme/
      - lib/shared/theme/reveric_colors.dart
      - lib/shared/theme/reveric_typography.dart
@@ -102,7 +102,7 @@
 }
 
 /* =========================================================================
-   Semantic element styles — drop into pages for instant Reveric flavor
+   Semantic element styles — drop into pages for instant brand flavor
    ========================================================================= */
 
 body {

@@ -1,5 +1,5 @@
 // NavRail — leftmost icon + label nav.
-// Sections: 系统 · 创作 · 世界观 · AI · 灵感. Bottom: brand row "幻界".
+// Sections: 系统 · 创作 · 世界观 · AI · 灵感. Bottom: brand row "创作工作台".
 // 分组、顺序与图标对齐 lib/desktop/widgets/sidebar/rail.dart 的 _railGroups：
 // 素材归「创作」、封面归「系统」,势力/生物/物品/技能并成一个「图鉴」入口,
 // 没有单独的「资料」组。普通 novel 与剧本共用这套骨架,只有「创作」组的内容不同。
@@ -150,12 +150,12 @@ function NavRail({ activeId, onSelect, onOpenSettings, screenplay, hrefBase = ""
         type="button"
         className="m-navrail__brand"
         onClick={onOpenSettings}
-        title="设置 · 幻界"
+        title="设置 · 创作工作台"
       >
         <span className="m-avatar m-avatar--user" style={{ width: 22, height: 22 }}>
           <Icon name="user" size={12} />
         </span>
-        <span className="m-navrail__brand-name">幻界</span>
+        <span className="m-navrail__brand-name">创作工作台</span>
       </button>
     </nav>
   );

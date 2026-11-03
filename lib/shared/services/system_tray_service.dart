@@ -15,6 +15,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:tray_manager/tray_manager.dart';
@@ -22,6 +23,7 @@ import 'package:tray_manager/tray_manager.dart';
 import '../components/dialog_feedback.dart';
 import '../database/app_database.dart';
 import '../database/novel_content_database.dart';
+import '../localization/locale_keys.dart';
 import '../logger/app_logger.dart';
 import '../logger/startup_failure_reporter.dart';
 import 'crash_reporting/crash_sentinel.dart';
@@ -66,7 +68,7 @@ class SystemTrayService with TrayListener {
 
     try {
       await trayManager.setIcon(_iconPath, isTemplate: true);
-      await trayManager.setToolTip('Reveric');
+      await trayManager.setToolTip(tr(LocaleKeys.appTitle));
       await _updateMenu();
 
       await windowManager.setPreventClose(true);
@@ -83,7 +85,7 @@ class SystemTrayService with TrayListener {
     final menu = Menu(
       items: [
         MenuItem(key: 'newNovel', label: '新建小说'),
-        MenuItem(key: 'about', label: '关于 Reveric'),
+        MenuItem(key: 'about', label: '关于应用'),
         MenuItem.separator(),
         MenuItem(key: 'hide', label: '隐藏'),
         MenuItem(key: 'show', label: '显示'),
@@ -181,7 +183,7 @@ class SystemTrayService with TrayListener {
       context: context,
       builder: (ctx) {
         return RevericDialog(
-          title: 'Reveric',
+          title: tr(LocaleKeys.appTitle),
           content: Text('版本 1.0.0\nAI 辅助写作工具'),
           actions: [
             RevericButton.secondary(

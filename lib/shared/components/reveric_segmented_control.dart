@@ -1,4 +1,4 @@
-// 职责: Reveric 分段控件 — 通用 N 段切换，用带阴影的滑块标示选中态并平滑滑动。
+// 职责: 分段控件 — 通用 N 段切换，用带阴影的滑块标示选中态并平滑滑动。
 // 关联文件:
 //   lib/shared/theme/theme.dart
 //   lib/shared/widgets/settings/usage_view.dart

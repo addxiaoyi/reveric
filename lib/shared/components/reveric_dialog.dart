@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 import '../theme/theme.dart';
 import 'reveric_button.dart';
 
-/// 将页面的 Reveric 主题带入弹窗路由，保留调用方的返回值和关闭策略。
+/// 将页面的主题带入弹窗路由，保留调用方的返回值和关闭策略。
 Future<T?> showRevericDialog<T>({
   required BuildContext context,
   required WidgetBuilder builder,

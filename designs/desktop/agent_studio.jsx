@@ -144,7 +144,7 @@ const AS_MARKET = [
     description: "为悬疑线规划线索埋设与回收点,校验反转是否有据可循、是否提前泄底。",
   },
   {
-    id: "mk-military", name: "军事考据官", emoji: "⚙️", author: "幻界官方", official: true, installs: 1840,
+    id: "mk-military", name: "军事考据官", emoji: "⚙️", author: "官方", official: true, installs: 1840,
     version: "1.2.0", category: "设定", mode: "council",
     description: "核查冷兵器/近代战争的编制、装备、战术与后勤细节,避免硬伤。",
   },

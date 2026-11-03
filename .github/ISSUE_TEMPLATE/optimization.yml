@@ -1,11 +1,11 @@
 name: 优化建议
-description: 改进 Reveric 现有操作体验或性能
+description: 改进创作工作台现有操作体验或性能
 title: "[优化] "
 body:
   - type: markdown
     attributes:
       value: |
-        提交前请搜索[已有问题](https://github.com/looplj/reveric/issues)。崩溃或结果错误请使用「错误报告」。
+        提交前请搜索[已有问题](https://github.com/addxiaoyi/reveric/issues)。崩溃或结果错误请使用「错误报告」。
 
         示例和附件请移除私人内容。
 
@@ -41,7 +41,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Reveric 版本
+      label: 创作工作台 版本
       description: 源码构建请补充提交哈希。
     validations:
       required: true

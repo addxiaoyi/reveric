@@ -18,9 +18,9 @@ const response = (
 const article =
   "<html><head><title>作品</title></head><body><h1>作品</h1><p>正文内容 <strong>bold</strong></p><script>secretScript()</script></body></html>";
 const searchHtml = `<html><body>
-<div class="result c-container" data-tools='{"title":"Reveric 官方文档","url":"https://example.com/docs"}'><h3><a href="https://example.com/docs">Reveric <em>官方</em>文档</a></h3><div class="c-abstract">Reveric 文档、版本说明与使用指南。</div></div>
-<div class="result c-container ec_result" data-tools='{"title":"Reveric 推广","url":"https://ads.example.com"}'><h3><a href="https://ads.example.com">广告</a></h3></div>
-<div class="result c-container"><h3><a href="https://github.com/looplj/reveric">Reveric GitHub</a></h3><div class="c-abstract">Reveric 源码仓库。</div></div></body></html>`;
+<div class="result c-container" data-tools='{"title":"创作工作台 官方文档","url":"https://example.com/docs"}'><h3><a href="https://example.com/docs">创作工作台 <em>官方</em>文档</a></h3><div class="c-abstract">创作工作台 文档、版本说明与使用指南。</div></div>
+<div class="result c-container ec_result" data-tools='{"title":"创作工作台 推广","url":"https://ads.example.com"}'><h3><a href="https://ads.example.com">广告</a></h3></div>
+<div class="result c-container"><h3><a href="https://github.com/addxiaoyi/reveric">创作工作台 GitHub</a></h3><div class="c-abstract">创作工作台 源码仓库。</div></div></body></html>`;
 function harness(
   fetch: (url: string, init?: HttpRequest) => Promise<HttpResponse>,
 ) {
@@ -347,14 +347,14 @@ test("search request preserves query, language and filters ads", async () => {
   assert.equal(result.engine, "baidu");
   assert.deepEqual(result.results, [
     {
-      title: "Reveric 官方文档",
+      title: "创作工作台 官方文档",
       url: "https://example.com/docs",
-      snippet: "Reveric 文档、版本说明与使用指南。",
+      snippet: "创作工作台 文档、版本说明与使用指南。",
     },
     {
-      title: "Reveric GitHub",
-      url: "https://github.com/looplj/reveric",
-      snippet: "Reveric 源码仓库。",
+      title: "创作工作台 GitHub",
+      url: "https://github.com/addxiaoyi/reveric",
+      snippet: "创作工作台 源码仓库。",
     },
   ]);
 });

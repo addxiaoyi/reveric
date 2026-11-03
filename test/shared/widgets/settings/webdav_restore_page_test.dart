@@ -91,7 +91,7 @@ class _FakeWebDavBackupService extends WebDavBackupService {
     return WebDavListResult.success(<WebDavBackupFile>[
       WebDavBackupFile(
         name: 'reveric_backup_20260806.zip',
-        remotePath: '/Reveric/Backups/reveric_backup_20260806.zip',
+        remotePath: '/Creative Workspace/Backups/reveric_backup_20260806.zip',
         size: 1024,
         modifiedAt: DateTime(2026, 8, 6, 10),
       ),

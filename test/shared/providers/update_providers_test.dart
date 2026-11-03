@@ -39,7 +39,7 @@ void main() {
     overrides: [updateSourceProvider.overrideWithValue(source)],
   );
 
-  test('default update source targets Reveric GitHub release assets', () async {
+  test('default update source targets GitHub release assets', () async {
     final requests = <Uri>[];
     final assets = {
       'macos': 'reveric-9.2.0-macos-arm64.zip',
@@ -69,7 +69,7 @@ void main() {
                   'name': name,
                   'size': 1024,
                   'browser_download_url':
-                      'https://github.com/looplj/reveric/releases/download/v9.2.0/$name',
+                      'https://github.com/addxiaoyi/reveric/releases/download/v9.2.0/$name',
                 },
             ],
           }),
@@ -78,7 +78,7 @@ void main() {
       }),
     );
     expect(requests, [
-      Uri.parse('https://api.github.com/repos/looplj/reveric/releases/latest'),
+      Uri.parse('https://api.github.com/repos/addxiaoyi/reveric/releases/latest'),
     ]);
     expect(result, isA<UpdateAvailable>());
     final info = (result as UpdateAvailable).info;

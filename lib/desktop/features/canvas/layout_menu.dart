@@ -1,4 +1,4 @@
-// 职责: 使用 Reveric 菜单展示画布排列操作，按图结构和忙碌状态禁用无效操作。
+// 职责: 使用通用菜单展示画布排列操作，按图结构和忙碌状态禁用无效操作。
 // 关联文件:
 //   lib/shared/components/reveric_context_menu.dart
 //   lib/desktop/features/canvas/edit_session.dart

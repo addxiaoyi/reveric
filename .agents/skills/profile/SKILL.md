@@ -24,7 +24,7 @@ Use this skill to collect runtime evidence before diagnosing performance issues.
 Use Activity Monitor PID if the user provides it. Otherwise:
 
 ```bash
-pgrep -fl Reveric
+pgrep -fl "Creative Workspace"
 ps -p <pid> -o pid,ppid,stat,etime,time,%cpu,%mem,command
 ```
 
@@ -36,7 +36,7 @@ For `flutter run -d macos`, the app process has a VM service port and Flutter st
 
 ```bash
 lsof -Pan -p <app-pid> -iTCP -sTCP:LISTEN
-ps -Ao pid,ppid,stat,etime,%cpu,%mem,command | rg "development-service|flutter_tools|Reveric"
+ps -Ao pid,ppid,stat,etime,%cpu,%mem,command | rg "development-service|flutter_tools|Creative Workspace"
 ```
 
 Look for:

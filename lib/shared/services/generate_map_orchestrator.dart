@@ -157,10 +157,10 @@ class GenerateMapOrchestrator {
 
   final NovelContentDatabase database;
 
-  /// null 表示 Reveric 图片模型不可用。首次画图走文生图。
+  /// null 表示图片模型不可用。首次画图走文生图。
   final AiImageGenerationCallback? imageGenerateCallback;
 
-  /// null 表示 Reveric 图片模型不可用；仅参考上一版重画时走改图。
+  /// null 表示图片模型不可用；仅参考上一版重画时走改图。
   final AiMultiImageEditCallback? imageEditCallback;
 
   /// null 表示地名回读模型未配置。

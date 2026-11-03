@@ -1,4 +1,4 @@
-// 职责: Reveric 通用搜索输入 — 搜索框组件、自持 debounce 的回调式变体与防抖搜索状态 hook，供各列表/管理页复用。
+// 职责: 通用搜索输入 — 搜索框组件、自持 debounce 的回调式变体与防抖搜索状态 hook，供各列表/管理页复用。
 // 关联文件:
 //   lib/shared/theme/theme.dart
 // 遵循的 Rules:

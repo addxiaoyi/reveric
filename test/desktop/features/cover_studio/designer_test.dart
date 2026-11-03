@@ -234,7 +234,7 @@ Widget _wrap({required AppDatabase database, required Widget child}) {
   return ProviderScope(
     overrides: [
       appDatabaseProvider.overrideWithValue(database),
-      // 门禁会 watch Reveric 封面模型；测试不接 settings DB，固定为无配置。
+      // 门禁会 watch 封面模型；测试不接 settings DB，固定为无配置。
       coverStudioImageModelSelectionProvider.overrideWithValue(null),
       appBackgroundActiveProvider.overrideWithValue(false),
     ],

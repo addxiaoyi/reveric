@@ -1,4 +1,4 @@
-// 职责: Reveric 下拉控件 — 提供表单、数字范围与设置/属性面板 inline dropdown。
+// 职责: 下拉控件 — 提供表单、数字范围与设置/属性面板 inline dropdown。
 // 关联文件:
 //   lib/shared/components/reveric_input_decoration.dart
 //   lib/shared/theme/theme.dart

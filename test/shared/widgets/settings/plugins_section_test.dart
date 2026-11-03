@@ -219,7 +219,7 @@ void main() {
     expect(find.text('New'), findsNWidgets(2));
     expect(
       find.text(
-        'Local plugins are not reviewed by Reveric. Only install plugins from sources you trust.',
+        'Local plugins are not reviewed. Only install plugins from sources you trust.',
       ),
       findsOneWidget,
     );

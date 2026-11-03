@@ -197,7 +197,7 @@ class AssistantCoordinator {
     if (resolved == null) {
       await _sendSafe(
         chatId,
-        '尚未配置默认聊天模型。请在 Reveric 设置中先配置一个 AI 提供方并选择默认聊天模型。',
+        '尚未配置默认聊天模型。请在设置中先配置一个 AI 提供方并选择默认聊天模型。',
       );
       return;
     }

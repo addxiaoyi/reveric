@@ -29,7 +29,7 @@ class AgentSkillImportParseResult {
 class AgentSkillImportParser {
   /// Parses YAML frontmatter from an Agent Skills `SKILL.md`.
   ///
-  /// Canonical format (Agent Skills spec + Reveric extensions):
+  /// Canonical format (Agent Skills spec + app extensions):
   /// ```
   /// ---
   /// name: SkillName
@@ -42,7 +42,7 @@ class AgentSkillImportParser {
   /// <markdown body>
   /// ```
   ///
-  /// Spec top-level fields: `name`, `description` (required). Reveric keeps
+  /// Spec top-level fields: `name`, `description` (required). The app keeps
   /// top-level `when_to_use`. `category` / `tags` live under optional
   /// `metadata` (string → string).
   /// If `when_to_use` is missing or empty, it falls back to `description`.

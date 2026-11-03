@@ -1,11 +1,11 @@
 name: 使用咨询
-description: 咨询 Reveric 的安装、配置或使用方法
+description: 咨询创作工作台的安装、配置或使用方法
 title: "[咨询] "
 body:
   - type: markdown
     attributes:
       value: |
-        提问前可先查看 [README](https://github.com/looplj/reveric#readme) 和[已有问题](https://github.com/looplj/reveric/issues)。
+        提问前可先查看 [README](https://github.com/addxiaoyi/reveric#readme) 和[已有问题](https://github.com/addxiaoyi/reveric/issues)。
 
         请勿公开 API 密钥、私人作品正文或个人信息。
 
@@ -46,7 +46,7 @@ body:
     id: environment
     attributes:
       label: 版本与平台（如相关）
-      description: 请填写 Reveric 版本及 Windows、macOS 或 Android 系统版本；源码构建请补充提交哈希。
+      description: 请填写创作工作台版本及 Windows、macOS 或 Android 系统版本；源码构建请补充提交哈希。
 
   - type: textarea
     id: additional

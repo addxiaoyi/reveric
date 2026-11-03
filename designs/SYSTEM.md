@@ -1,6 +1,6 @@
-# Reveric Design System
+# 创作工作台 Design System
 
-> The cross-platform visual contract for Reveric's desktop and mobile clients — calm, modern, and focused on long-form writing.
+> The cross-platform visual contract for the desktop and mobile clients — calm, modern, and focused on long-form writing.
 
 ---
 
@@ -40,21 +40,21 @@ design intent and synchronization contract. HTML/CSS/JSX files under
 ## 2. Color Palette
 
 The palette system supports multiple themes, each defining a full set of
-semantic color tokens. **Reveric** is the application default. Every theme has
+semantic color tokens. The built-in default palette is used out of the box. Every theme has
 both light and dark runtime presets.
 
 ### Available Themes
 
-Reveric ships with **3 color themes**, matching `AppTheme` in
+The app ships with **3 color themes**, matching `AppTheme` in
 `lib/shared/providers/settings_providers.dart`:
 
 | Theme | Description | Accent (light / dark) |
 |---|---|---|
-| **Reveric** (default) | 玉白 · 墨玉 — cool mint-white canvas, white cards, ink-green actions | `#1C2623` / `#E4ECE8` |
+| **默认主题** (default) | 玉白 · 墨玉 — cool mint-white canvas, white cards, ink-green actions | `#1C2623` / `#E4ECE8` |
 | **Classic** | Minimal, timeless, high contrast | `#000000` / `#FFFFFF` |
 | **Ivory** | Warm and gentle, like aged paper and cream | `#A2AF9B` / `#A2AF9B` |
 
-Reveric's canvas is `#F2F6F4` and cards are pure white. The accent is
+The default canvas is `#F2F6F4` and cards are pure white. The accent is
 near-black ink green, inverted to jade-white in dark. Jade `#2A9C78` / `#4CC49C`
 fills the `accentAmber` slot and is reserved for AI, status and small
 highlights — never body text. `designs/themes.css` mirrors all three palettes
@@ -130,7 +130,7 @@ may vary by theme and brightness to preserve contrast.
 
 ## 3. Typography
 
-Reveric desktop uses **Georgia** (serif) for literary content and the **system sans-serif** (`-apple-system` / `Segoe UI` / `Roboto`) for UI chrome. Mobile uses the platform default font for both content and chrome, so iOS/Android system font settings remain visible throughout `lib/mobile/`.
+The desktop app uses **Georgia** (serif) for literary content and the **system sans-serif** (`-apple-system` / `Segoe UI` / `Roboto`) for UI chrome. Mobile uses the platform default font for both content and chrome, so iOS/Android system font settings remain visible throughout `lib/mobile/`.
 
 | Token | Family | Size | Weight | Line Height | Usage |
 |---|---|---|---|---|---|
@@ -461,7 +461,7 @@ tooltip 和辅助功能保留完整内容。徽标不承担筛选、点击或删
 
 ## 7. Theme Mechanism
 
-Reveric combines semantic tokens with Flutter's `ThemeData`.
+The app combines semantic tokens with Flutter's `ThemeData`.
 `RevericTheme` exposes the semantic colors and typography through the widget
 tree, while `RevericThemeData.toThemeData()` maps them to Material component
 defaults.
@@ -516,7 +516,7 @@ Widget build(BuildContext context) {
 1. **Never hardcode design values.** Use `RevericTheme.colorsOf(context)`,
    `RevericTheme.typographyOf(context)`, `RevericSpacing`, `RevericRadius`,
    and `RevericSizes`.
-2. **Default theme is Reveric.** `AppThemeMode` selects light, dark, or system
+2. **Default theme is the built-in default palette.** `AppThemeMode` selects light, dark, or system
    behavior, and every `AppTheme` value maps to both brightness presets.
 3. **Use Material defaults.** `RevericThemeData.toThemeData()` configures
    buttons, icon buttons, switches, dividers, inputs, and other shared
@@ -530,7 +530,7 @@ Widget build(BuildContext context) {
 
 ### Theme source
 
-Classic and Ivory come from an external CSS theme set; Reveric is a Reveric-specific palette. The oklch color values from the original CSS were converted to sRGB hex using the oklch → linear sRGB → sRGB conversion pipeline. Each theme's light variant was mapped to RevericColors semantic tokens:
+Classic and Ivory come from an external CSS theme set; the default palette is specific to this app. The oklch color values from the original CSS were converted to sRGB hex using the oklch → linear sRGB → sRGB conversion pipeline. Each theme's light variant was mapped to RevericColors semantic tokens:
 
 | CSS Variable | RevericColors Token | Role |
 |---|---|---|

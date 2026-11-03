@@ -24,6 +24,7 @@ import 'package:flutter/src/widgets/_window_win32.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../shared/localization/locale_keys.dart';
 import '../../shared/logger/app_logger.dart';
 import '../../shared/providers/settings_providers.dart';
 import '../../shared/theme/theme.dart';
@@ -595,7 +596,7 @@ class _DetachedWindowApp extends StatelessWidget {
     };
 
     return MaterialApp(
-      title: 'Reveric',
+      title: tr(LocaleKeys.appTitle),
       debugShowCheckedModeBanner: false,
       theme: light.toThemeData(),
       darkTheme: dark.toThemeData(),

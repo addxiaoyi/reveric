@@ -8,13 +8,6 @@
 function SettingsScreen({onOpen}){
   const [ref, scrolled] = useScrolled();
   const [dream, setDream] = useState(true);
-  const [qqCopied, setQqCopied] = useState(false);
-  const copyQq = (e) => {
-    e.stopPropagation();
-    navigator.clipboard?.writeText('924148054');
-    setQqCopied(true);
-    setTimeout(()=>setQqCopied(false), 1400);
-  };
   const theme = RevericTheme.useTheme();
   const themeValue = (THEMES.find(t=>t.key===theme.palette)||THEMES[0]).label+' · '+
     (THEME_MODES.find(m=>m.key===theme.mode)||THEME_MODES[0]).label;
@@ -80,26 +73,17 @@ function SettingsScreen({onOpen}){
           <Row icon="archive" iconBg="color-mix(in srgb, var(--text-muted) 12%, transparent)" iconColor="var(--text-muted)" label="存储与备份" value="248 MB"/>
         </Group>
 
-        <Group title="社区">
-          <Row icon="qq" iconBg="color-mix(in srgb, var(--accent-amber) 14%, transparent)" iconColor="var(--accent-amber)"
-            label="加入 QQ 群"
-            onClick={()=>window.open('https://qm.qq.com/q/Ap8pfOWHDO', '_blank')}
-            right={
-              <span onClick={copyQq} title="复制" style={{display:'inline-flex', padding:4, margin:-4,
-                color: qqCopied ? 'var(--accent-amber)' : 'var(--text-subtle)'}}>
-                {qqCopied ? <I.check s={18}/> : <I.copy s={18}/>}
-              </span>
-            }/>
+        <Group title="开源">
           <Row icon="github" iconBg="color-mix(in srgb, var(--text-muted) 12%, transparent)" iconColor="var(--text-secondary)" label="GitHub 开源仓库"
-            onClick={()=>window.open('https://github.com/looplj/reveric', '_blank')} right={<I.chevR s={18} c="var(--text-subtle)"/>}/>
+            onClick={()=>window.open('https://github.com/addxiaoyi/reveric', '_blank')} right={<I.chevR s={18} c="var(--text-subtle)"/>}/>
         </Group>
 
         <Group title="系统">
-          <Row icon="info" iconBg="var(--surface-dim)" iconColor="var(--text-muted)" label="关于 Reveric" value="v0.4.2"/>
+          <Row icon="info" iconBg="var(--surface-dim)" iconColor="var(--text-muted)" label="关于创作工作台" value="v0.4.2"/>
         </Group>
 
         <div style={{textAlign:'center', fontSize:11, color:'var(--text-subtle)', padding:'8px 0 4px', fontFamily:'var(--display)'}}>
-          Reveric · 为创作者打造的写作空间
+          创作工作台 · 为创作者打造的写作空间
         </div>
       </div>
     </div>

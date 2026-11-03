@@ -1,6 +1,6 @@
-﻿<#
+<#
 .SYNOPSIS
-  本地构建 Reveric Windows 安装包（EXE）
+  本地构建 创作工作台 Windows 安装包（EXE）
 .DESCRIPTION
   镜像 CI (.github/workflows/build.yaml) 的 Windows 打包流程：
   1. 安装 Inno Setup + 中文语言文件

@@ -1,1 +1,1768 @@
-{"namespace":"RevericDesignSystem_74ac7e","components":[],"startingPoints":[],"cards":[{"path":"preview/brand-antipatterns.html","group":"Brand"},{"path":"preview/brand-backgrounds.html","group":"Brand"},{"path":"preview/brand-iconography.html","group":"Brand"},{"path":"preview/brand-illustration.html","group":"Brand"},{"path":"preview/brand-logo.html","group":"Brand"},{"path":"preview/brand-mark-app-icon.html","group":"Brand"},{"path":"preview/brand-tone.html","group":"Brand"},{"path":"preview/color-accent.html","group":"Colors"},{"path":"preview/color-dark-preview.html","group":"Colors"},{"path":"preview/color-palettes.html","group":"Colors"},{"path":"preview/color-semantic.html","group":"Colors"},{"path":"preview/color-surfaces.html","group":"Colors"},{"path":"preview/color-text-ink.html","group":"Colors"},{"path":"preview/component-blockquote.html","group":"Components"},{"path":"preview/component-buttons.html","group":"Components"},{"path":"preview/component-chat-bubble.html","group":"Components"},{"path":"preview/component-chips-tags.html","group":"Components"},{"path":"preview/component-composer.html","group":"Components"},{"path":"preview/component-icon-buttons.html","group":"Components"},{"path":"preview/component-input.html","group":"Components"},{"path":"preview/component-list-item.html","group":"Components"},{"path":"preview/component-novel-card.html","group":"Components"},{"path":"preview/component-segmented.html","group":"Components"},{"path":"preview/component-settings-row.html","group":"Components"},{"path":"preview/component-state-chips.html","group":"Components"},{"path":"preview/spacing-elevation.html","group":"Spacing"},{"path":"preview/spacing-radii.html","group":"Spacing"},{"path":"preview/spacing-scale.html","group":"Spacing"},{"path":"preview/type-body-small.html","group":"Type"},{"path":"preview/type-body.html","group":"Type"},{"path":"preview/type-display.html","group":"Type"},{"path":"preview/type-rule.html","group":"Type"},{"path":"preview/type-ui.html","group":"Type"},{"path":"index.html","group":"UI Kit — Desktop App","viewport":"1440x900","subtitle":"Library + Editor + Chat — click through","name":"UI Kit · Desktop App"}],"globalCssPaths":["colors_and_type.css","preview/_card.css","kit.css"],"tokens":[{"name":"--canvas","value":"#FEFDFB","kind":"color","definedIn":"colors_and_type.css"},{"name":"--surface","value":"#FCFBF9","kind":"color","definedIn":"colors_and_type.css"},{"name":"--surface-dim","value":"#F8F6F3","kind":"color","definedIn":"colors_and_type.css"},{"name":"--surface-container","value":"#FAF9F6","kind":"color","definedIn":"colors_and_type.css"},{"name":"--surface-container-high","value":"#FDFCFA","kind":"color","definedIn":"colors_and_type.css"},{"name":"--border","value":"#EAE6E0","kind":"color","definedIn":"colors_and_type.css"},{"name":"--border-subtle","value":"#F2F0EB","kind":"color","definedIn":"colors_and_type.css"},{"name":"--border-input","value":"#E8E4DE","kind":"color","definedIn":"colors_and_type.css"},{"name":"--text-primary","value":"#2C2418","kind":"font","definedIn":"colors_and_type.css"},{"name":"--text-secondary","value":"#5D4F3D","kind":"font","definedIn":"colors_and_type.css"},{"name":"--text-muted","value":"#8A7D6B","kind":"font","definedIn":"colors_and_type.css"},{"name":"--text-subtle","value":"#B5A99A","kind":"font","definedIn":"colors_and_type.css"},{"name":"--text-tertiary","value":"#8A7D6B","kind":"font","definedIn":"colors_and_type.css"},{"name":"--accent","value":"#C4956A","kind":"color","definedIn":"colors_and_type.css"},{"name":"--accent-warm","value":"#B8835A","kind":"color","definedIn":"colors_and_type.css"},{"name":"--accent-amber","value":"#E8A958","kind":"color","definedIn":"colors_and_type.css"},{"name":"--on-accent","value":"#2C2418","kind":"color","definedIn":"colors_and_type.css"},{"name":"--selected","value":"#F2EDE6","kind":"color","definedIn":"colors_and_type.css"},{"name":"--hover","value":"#F7F4EF","kind":"color","definedIn":"colors_and_type.css"},{"name":"--deletion-bg","value":"#FDE8E8","kind":"color","definedIn":"colors_and_type.css"},{"name":"--deletion-border","value":"#C53030","kind":"color","definedIn":"colors_and_type.css"},{"name":"--addition-bg","value":"#E8F5E8","kind":"color","definedIn":"colors_and_type.css"},{"name":"--addition-border","value":"#4A7C59","kind":"color","definedIn":"colors_and_type.css"},{"name":"--warning-bg","value":"#FEF3C7","kind":"color","definedIn":"colors_and_type.css"},{"name":"--warning-text","value":"#D97706","kind":"font","definedIn":"colors_and_type.css"},{"name":"--success","value":"#4A7C59","kind":"color","definedIn":"colors_and_type.css"},{"name":"--error","value":"#C53030","kind":"color","definedIn":"colors_and_type.css"},{"name":"--blockquote-border","value":"#D4A574","kind":"color","definedIn":"colors_and_type.css"},{"name":"--font-serif","value":"Georgia, \"Times New Roman\", \"Songti SC\", \"STSong\", serif","kind":"font","definedIn":"colors_and_type.css"},{"name":"--font-sans","value":"system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n                 \"PingFang SC\", \"Microsoft YaHei\", sans-serif","kind":"font","definedIn":"colors_and_type.css"},{"name":"--font-mono","value":"ui-monospace, SFMono-Regular, Menlo, Consolas, monospace","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-display-size","value":"28px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-display-weight","value":"700","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-display-line","value":"1.3","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-heading-size","value":"22px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-heading-weight","value":"700","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-heading-line","value":"1.3","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-body-size","value":"16px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-body-weight","value":"400","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-body-line","value":"1.75","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-body-small-size","value":"14px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-body-small-weight","value":"400","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-body-small-line","value":"1.5","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-size","value":"13px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-weight","value":"400","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-medium-weight","value":"500","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-semibold-weight","value":"600","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-line","value":"1.4","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-small-size","value":"12px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-tiny-size","value":"11px","kind":"font","definedIn":"colors_and_type.css"},{"name":"--type-ui-tiny-weight","value":"500","kind":"font","definedIn":"colors_and_type.css"},{"name":"--space-xxs","value":"4px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-xs","value":"6px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-sm","value":"8px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-md","value":"10px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-lg","value":"12px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-xl","value":"14px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-2xl","value":"16px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-3xl","value":"20px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-4xl","value":"24px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-5xl","value":"28px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--space-6xl","value":"40px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--editor-padding-h","value":"72px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--radius-small","value":"4px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-medium","value":"6px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-large","value":"8px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-xl","value":"10px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-2xl","value":"12px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-full","value":"14px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-pill","value":"16px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--radius-button","value":"8px","kind":"radius","definedIn":"colors_and_type.css"},{"name":"--size-sidebar","value":"280px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-editor-sidebar","value":"340px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-chat-panel","value":"360px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-button-h","value":"40px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-button-h-sm","value":"32px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-icon-button","value":"32px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-chat-bubble-r","value":"14px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-chat-bubble-max","value":"300px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-avatar-lg","value":"36px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--size-avatar-md","value":"28px","kind":"spacing","definedIn":"colors_and_type.css"},{"name":"--shadow-none","value":"none","kind":"shadow","definedIn":"colors_and_type.css"},{"name":"--shadow-dialog","value":"0 8px 24px rgba(44, 36, 24, 0.10),\n                    0 2px 8px rgba(44, 36, 24, 0.06)","kind":"shadow","definedIn":"colors_and_type.css"},{"name":"--shadow-overlay","value":"0 4px 16px rgba(44, 36, 24, 0.08)","kind":"shadow","definedIn":"colors_and_type.css"},{"name":"--canvas","value":"#1A1714","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--surface","value":"#221E1A","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--surface-dim","value":"#2A2520","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--surface-container","value":"#2D2822","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--surface-container-high","value":"#352F28","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--border","value":"#3D362E","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--border-subtle","value":"#332D26","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--border-input","value":"#453D33","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--text-primary","value":"#F5F0E8","kind":"font","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--text-secondary","value":"#D4CCC0","kind":"font","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--text-muted","value":"#A89B8C","kind":"font","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--text-subtle","value":"#7A6F62","kind":"font","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--text-tertiary","value":"#A89B8C","kind":"font","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--accent","value":"#D4A574","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--accent-warm","value":"#E8B87A","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--accent-amber","value":"#F6C570","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--on-accent","value":"#1A1714","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--selected","value":"#3D362E","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--hover","value":"#352F28","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--deletion-bg","value":"#3D1F1F","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--deletion-border","value":"#E53E3E","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--addition-bg","value":"#1F3D2A","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--addition-border","value":"#48BB78","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--warning-bg","value":"#3D331F","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--warning-text","value":"#F6AD55","kind":"font","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--success","value":"#48BB78","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--error","value":"#E53E3E","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--blockquote-border","value":"#D4A574","kind":"color","definedIn":"colors_and_type.css","scope":":root[data-theme=\"dark\"]"},{"name":"--canvas","value":"#FFFBF5","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--surface","value":"#FCFAF6","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--surface-dim","value":"#F5F0E8","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--surface-container","value":"#F5F1EB","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--surface-container-high","value":"#FAF6F0","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--border","value":"#E0D8CC","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--border-subtle","value":"#E8E2D8","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--border-input","value":"#E0D6CC","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--text-primary","value":"#2C2418","kind":"font","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--text-secondary","value":"#4A3F35","kind":"font","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--text-muted","value":"#8A7D6B","kind":"font","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--text-subtle","value":"#9E9484","kind":"font","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--accent","value":"#8B7355","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--accent-warm","value":"#C4956A","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--accent-amber","value":"#F6AD55","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--on-accent","value":"#FFFBF5","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--selected","value":"#E8E0D4","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--hover","value":"#EDE7DD","kind":"color","definedIn":"colors_and_type.css","scope":".theme-cartographer"},{"name":"--canvas","value":"#F3F0E8","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--surface","value":"#FAF8F2","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--surface-dim","value":"#E8E2D6","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--surface-container","value":"#F1ECE2","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--surface-container-high","value":"#FFFCF5","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--border","value":"#D4CABC","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--border-subtle","value":"#E5DDD0","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--border-input","value":"#CFC4B5","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--text-primary","value":"#24211D","kind":"font","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--text-secondary","value":"#4C4740","kind":"font","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--text-muted","value":"#797167","kind":"font","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--text-subtle","value":"#9D9487","kind":"font","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--accent","value":"#A63F35","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--accent-warm","value":"#715A43","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--accent-amber","value":"#B8894F","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--on-accent","value":"#FFFCF5","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--selected","value":"#E6DDD0","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--hover","value":"#EEE7DB","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"},{"name":"--blockquote-border","value":"#A63F35","kind":"color","definedIn":"colors_and_type.css","scope":".theme-ink-wash"}],"themes":[{"selector":":root[data-theme=\"dark\"]","label":"Root Dark"},{"selector":".theme-cartographer","label":"Cartographer"},{"selector":".theme-ink-wash","label":"Ink Wash"}],"fonts":[],"brandFonts":[{"family":"Songti SC","status":"no-face","tokens":["--font-serif"],"path":"colors_and_type.css"},{"family":"PingFang SC","status":"no-face","tokens":["--font-sans"],"path":"colors_and_type.css"}],"source":"spa"}
+{
+  "namespace": "RevericDesignSystem_74ac7e",
+  "components": [],
+  "startingPoints": [],
+  "cards": [
+    {
+      "path": "preview/brand-antipatterns.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-antipatterns.html"
+    },
+    {
+      "path": "preview/brand-backgrounds.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-backgrounds.html"
+    },
+    {
+      "path": "preview/brand-iconography.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-iconography.html"
+    },
+    {
+      "path": "preview/brand-illustration.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-illustration.html"
+    },
+    {
+      "path": "preview/brand-logo.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-logo.html"
+    },
+    {
+      "path": "preview/brand-mark-app-icon.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-mark-app-icon.html"
+    },
+    {
+      "path": "preview/brand-tone.html",
+      "group": "Brand",
+      "viewport": "",
+      "subtitle": "",
+      "name": "brand-tone.html"
+    },
+    {
+      "path": "preview/color-accent.html",
+      "group": "Colors",
+      "viewport": "",
+      "subtitle": "",
+      "name": "color-accent.html"
+    },
+    {
+      "path": "preview/color-dark-preview.html",
+      "group": "Colors",
+      "viewport": "",
+      "subtitle": "",
+      "name": "color-dark-preview.html"
+    },
+    {
+      "path": "preview/color-palettes.html",
+      "group": "Colors",
+      "viewport": "",
+      "subtitle": "",
+      "name": "color-palettes.html"
+    },
+    {
+      "path": "preview/color-semantic.html",
+      "group": "Colors",
+      "viewport": "",
+      "subtitle": "",
+      "name": "color-semantic.html"
+    },
+    {
+      "path": "preview/color-surfaces.html",
+      "group": "Colors",
+      "viewport": "",
+      "subtitle": "",
+      "name": "color-surfaces.html"
+    },
+    {
+      "path": "preview/color-text-ink.html",
+      "group": "Colors",
+      "viewport": "",
+      "subtitle": "",
+      "name": "color-text-ink.html"
+    },
+    {
+      "path": "preview/component-blockquote.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-blockquote.html"
+    },
+    {
+      "path": "preview/component-buttons.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-buttons.html"
+    },
+    {
+      "path": "preview/component-chat-bubble.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-chat-bubble.html"
+    },
+    {
+      "path": "preview/component-chips-tags.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-chips-tags.html"
+    },
+    {
+      "path": "preview/component-composer.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-composer.html"
+    },
+    {
+      "path": "preview/component-icon-buttons.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-icon-buttons.html"
+    },
+    {
+      "path": "preview/component-input.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-input.html"
+    },
+    {
+      "path": "preview/component-list-item.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-list-item.html"
+    },
+    {
+      "path": "preview/component-novel-card.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-novel-card.html"
+    },
+    {
+      "path": "preview/component-segmented.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-segmented.html"
+    },
+    {
+      "path": "preview/component-settings-row.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-settings-row.html"
+    },
+    {
+      "path": "preview/component-state-chips.html",
+      "group": "Components",
+      "viewport": "",
+      "subtitle": "",
+      "name": "component-state-chips.html"
+    },
+    {
+      "path": "preview/spacing-elevation.html",
+      "group": "Spacing",
+      "viewport": "",
+      "subtitle": "",
+      "name": "spacing-elevation.html"
+    },
+    {
+      "path": "preview/spacing-radii.html",
+      "group": "Spacing",
+      "viewport": "",
+      "subtitle": "",
+      "name": "spacing-radii.html"
+    },
+    {
+      "path": "preview/spacing-scale.html",
+      "group": "Spacing",
+      "viewport": "",
+      "subtitle": "",
+      "name": "spacing-scale.html"
+    },
+    {
+      "path": "preview/type-body-small.html",
+      "group": "Type",
+      "viewport": "",
+      "subtitle": "",
+      "name": "type-body-small.html"
+    },
+    {
+      "path": "preview/type-body.html",
+      "group": "Type",
+      "viewport": "",
+      "subtitle": "",
+      "name": "type-body.html"
+    },
+    {
+      "path": "preview/type-display.html",
+      "group": "Type",
+      "viewport": "",
+      "subtitle": "",
+      "name": "type-display.html"
+    },
+    {
+      "path": "preview/type-rule.html",
+      "group": "Type",
+      "viewport": "",
+      "subtitle": "",
+      "name": "type-rule.html"
+    },
+    {
+      "path": "preview/type-ui.html",
+      "group": "Type",
+      "viewport": "",
+      "subtitle": "",
+      "name": "type-ui.html"
+    },
+    {
+      "path": "canvas/Canvas.html",
+      "group": "UI Kit — Desktop App",
+      "viewport": "1440x900",
+      "subtitle": "引用节点 + 便签 + 5 种类型化边 + AI 共创",
+      "name": "无限画布 · CanvasEditorPage"
+    },
+    {
+      "path": "drama/Drama.html",
+      "group": "UI Kit — Desktop App",
+      "viewport": "1440x900",
+      "subtitle": "app 内页面 · NavRail + 第二栏 · 分镜 | 画布 | 列表 三个视图 · 剧集全局风格 + 剧本比例 / 清晰度 + 片段 / 视频 / 图片节点(风格跟随剧集、可上传) + 浮动生成输入框 + 制作助手 + 3D 导演台",
+      "name": "制片 · DramaProductionPage"
+    },
+    {
+      "path": "drama/Editing.html",
+      "group": "UI Kit — Desktop App",
+      "viewport": "1440x900",
+      "subtitle": "app 内页面 · NavRail + 第二栏 · 预览 + 属性 / 素材 + 多轨时间线(字幕 / 叠加 / 主轨磁吸 / 对白 / 音效 / 音乐)· 拖动、裁剪、分割、转场、撤销 · 按时间线导出成片 · 制作助手",
+      "name": "剪辑 · DramaEditingPage"
+    },
+    {
+      "path": "EntityGraph.html",
+      "group": "UI Kit — Desktop App",
+      "viewport": "1440x900",
+      "subtitle": "实体关系图谱 — isolated preview of the editor's Relations view",
+      "name": "Relations · Entity Graph"
+    },
+    {
+      "path": "index.html",
+      "group": "UI Kit — Desktop App",
+      "viewport": "1440x900",
+      "subtitle": "Library + Editor + Chat — click through",
+      "name": "UI Kit · Desktop App"
+    }
+  ],
+  "globalCssPaths": [
+    "../themes.css",
+    "colors_and_type.css",
+    "preview/_card.css",
+    "kit.css",
+    "styles.css"
+  ],
+  "tokens": [
+    {
+      "name": "--canvas",
+      "value": "#F2F6F4",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-dim",
+      "value": "#EAF0ED",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container",
+      "value": "#F6F9F7",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container-high",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border",
+      "value": "#E0E8E4",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "#EAF0ED",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-input",
+      "value": "#D8E1DD",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-primary",
+      "value": "#141A18",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "#3D4643",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-muted",
+      "value": "#646E6A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-subtle",
+      "value": "#A2ACA8",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-tertiary",
+      "value": "#646E6A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent",
+      "value": "#1C2623",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-warm",
+      "value": "#2D3A36",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-amber",
+      "value": "#2A9C78",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--on-accent",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--selected",
+      "value": "#E1F1EA",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--hover",
+      "value": "#EDF3F0",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-bg",
+      "value": "#FCE9E7",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-border",
+      "value": "#C2392B",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-bg",
+      "value": "#E1F2E9",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-border",
+      "value": "#1F8A68",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-bg",
+      "value": "#FCF1DC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-text",
+      "value": "#B4690E",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--success",
+      "value": "#1F8A68",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--error",
+      "value": "#C2392B",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--blockquote-border",
+      "value": "#8ED0B8",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-base",
+      "value": "#1C2623",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--scrim",
+      "value": "rgba(20, 26, 24, 0.32)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--glass",
+      "value": "rgba(242, 246, 244, 0.86)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--canvas",
+      "value": "#0F1412",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface",
+      "value": "#161C1A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-dim",
+      "value": "#1A211E",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container",
+      "value": "#1D2422",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container-high",
+      "value": "#232B28",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border",
+      "value": "#2A3330",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "#212926",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-input",
+      "value": "#333D39",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-primary",
+      "value": "#E8EEEB",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "#BEC8C4",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-muted",
+      "value": "#85918C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-subtle",
+      "value": "#5A6561",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-tertiary",
+      "value": "#85918C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent",
+      "value": "#E4ECE8",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-warm",
+      "value": "#C9D5D0",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-amber",
+      "value": "#4CC49C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--on-accent",
+      "value": "#0F1412",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--selected",
+      "value": "#1B302A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--hover",
+      "value": "#1F2724",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-bg",
+      "value": "#3A2120",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-border",
+      "value": "#E04A3F",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-bg",
+      "value": "#173126",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-border",
+      "value": "#4CC49C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-bg",
+      "value": "#3A2F1C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-text",
+      "value": "#E8A657",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--success",
+      "value": "#4CC49C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--error",
+      "value": "#EB6B5E",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--blockquote-border",
+      "value": "#2F7D63",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-base",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--scrim",
+      "value": "rgba(0, 0, 0, 0.55)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--glass",
+      "value": "rgba(15, 20, 18, 0.86)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--canvas",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface",
+      "value": "#FAFAFA",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-dim",
+      "value": "#F0F0F0",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container",
+      "value": "#F5F5F5",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container-high",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border",
+      "value": "#E0E0E0",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "#EEEEEE",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-input",
+      "value": "#D0D0D0",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-primary",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "#333333",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-muted",
+      "value": "#666666",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-subtle",
+      "value": "#999999",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-tertiary",
+      "value": "#666666",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-warm",
+      "value": "#333333",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-amber",
+      "value": "#666666",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--on-accent",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--selected",
+      "value": "#E8E8E8",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--hover",
+      "value": "#F2F2F2",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-bg",
+      "value": "#FEE2E2",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-border",
+      "value": "#DC2626",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-bg",
+      "value": "#D1FAE5",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-border",
+      "value": "#059669",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-bg",
+      "value": "#FEF9C3",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-text",
+      "value": "#A16207",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--success",
+      "value": "#059669",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--error",
+      "value": "#DC2626",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--blockquote-border",
+      "value": "#CCCCCC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-base",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--scrim",
+      "value": "rgba(0, 0, 0, 0.32)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--glass",
+      "value": "rgba(255, 255, 255, 0.88)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--canvas",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface",
+      "value": "#0A0A0A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-dim",
+      "value": "#141414",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container",
+      "value": "#1A1A1A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container-high",
+      "value": "#242424",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border",
+      "value": "#2A2A2A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "#1F1F1F",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-input",
+      "value": "#333333",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-primary",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "#CCCCCC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-muted",
+      "value": "#888888",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-subtle",
+      "value": "#666666",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-tertiary",
+      "value": "#888888",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent",
+      "value": "#FFFFFF",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-warm",
+      "value": "#CCCCCC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-amber",
+      "value": "#888888",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--on-accent",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--selected",
+      "value": "#2A2A2A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--hover",
+      "value": "#333333",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-bg",
+      "value": "#2A1414",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-border",
+      "value": "#EF4444",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-bg",
+      "value": "#142A1C",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-border",
+      "value": "#10B981",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-bg",
+      "value": "#2A2614",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-text",
+      "value": "#FBBF24",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--success",
+      "value": "#10B981",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--error",
+      "value": "#EF4444",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--blockquote-border",
+      "value": "#444444",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-base",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--scrim",
+      "value": "rgba(0, 0, 0, 0.6)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--glass",
+      "value": "rgba(0, 0, 0, 0.86)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--canvas",
+      "value": "#F8F8F0",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface",
+      "value": "#FAFAF3",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-dim",
+      "value": "#EBECDC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container",
+      "value": "#F1F2E5",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container-high",
+      "value": "#F5F6EC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border",
+      "value": "#DADBC4",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "#ECEDDC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-input",
+      "value": "#DEDFCA",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-primary",
+      "value": "#2E3026",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "#555848",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-muted",
+      "value": "#767866",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-subtle",
+      "value": "#92957F",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-tertiary",
+      "value": "#767866",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent",
+      "value": "#A2AF9B",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-warm",
+      "value": "#8B9A8A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-amber",
+      "value": "#C4956A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--on-accent",
+      "value": "#2E3026",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--selected",
+      "value": "#E2E3CD",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--hover",
+      "value": "#EBECDC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-bg",
+      "value": "#FDE8E8",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-border",
+      "value": "#C53030",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-bg",
+      "value": "#E8FDE8",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-border",
+      "value": "#2F855A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-bg",
+      "value": "#FEF3C7",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-text",
+      "value": "#D97706",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--success",
+      "value": "#2F855A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--error",
+      "value": "#C53030",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--blockquote-border",
+      "value": "#D4A574",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-base",
+      "value": "#2E3026",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--scrim",
+      "value": "rgba(46, 48, 38, 0.32)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--glass",
+      "value": "rgba(248, 248, 240, 0.88)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--canvas",
+      "value": "#141410",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface",
+      "value": "#1C1C16",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-dim",
+      "value": "#252520",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container",
+      "value": "#2A2A24",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--surface-container-high",
+      "value": "#34342E",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border",
+      "value": "#3E3E36",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-subtle",
+      "value": "#323228",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--border-input",
+      "value": "#484840",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-primary",
+      "value": "#EBECDC",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-secondary",
+      "value": "#B8B8A6",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-muted",
+      "value": "#7A7A68",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-subtle",
+      "value": "#5A5A48",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--text-tertiary",
+      "value": "#7A7A68",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent",
+      "value": "#A2AF9B",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-warm",
+      "value": "#8B9A8A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--accent-amber",
+      "value": "#C4956A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--on-accent",
+      "value": "#141410",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--selected",
+      "value": "#3E3E36",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--hover",
+      "value": "#484840",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-bg",
+      "value": "#3D1F1F",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--deletion-border",
+      "value": "#E53E3E",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-bg",
+      "value": "#1F3D2A",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--addition-border",
+      "value": "#48BB78",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-bg",
+      "value": "#3D331F",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--warning-text",
+      "value": "#F6AD55",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--success",
+      "value": "#48BB78",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--error",
+      "value": "#E53E3E",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--blockquote-border",
+      "value": "#A2AF9B",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-base",
+      "value": "#000000",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--scrim",
+      "value": "rgba(0, 0, 0, 0.55)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--glass",
+      "value": "rgba(20, 20, 16, 0.86)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--card-border",
+      "value": "transparent",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-card",
+      "value": "0 1px 2px color-mix(in srgb, var(--shadow-base) 4%, transparent),\r\n                 0 8px 24px color-mix(in srgb, var(--shadow-base) 6%, transparent)",
+      "kind": "spacing",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--card-border",
+      "value": "var(--border-subtle)",
+      "kind": "color",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--shadow-card",
+      "value": "0 1px 2px rgba(0, 0, 0, 0.24)",
+      "kind": "shadow",
+      "definedIn": "../themes.css"
+    },
+    {
+      "name": "--font-serif",
+      "value": "Georgia, \"Times New Roman\", \"Songti SC\", \"STSong\", serif",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--font-sans",
+      "value": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\",\r\n                 \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--font-mono",
+      "value": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--font-display",
+      "value": "var(--font-sans)",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-display-size",
+      "value": "28px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-display-weight",
+      "value": "700",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-display-line",
+      "value": "1.3",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-heading-size",
+      "value": "22px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-heading-weight",
+      "value": "700",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-heading-line",
+      "value": "1.3",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-body-size",
+      "value": "16px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-body-weight",
+      "value": "400",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-body-line",
+      "value": "1.75",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-body-small-size",
+      "value": "14px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-body-small-weight",
+      "value": "400",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-body-small-line",
+      "value": "1.5",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-size",
+      "value": "13px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-weight",
+      "value": "400",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-medium-weight",
+      "value": "500",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-semibold-weight",
+      "value": "600",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-line",
+      "value": "1.4",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-small-size",
+      "value": "12px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-tiny-size",
+      "value": "11px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--type-ui-tiny-weight",
+      "value": "500",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-xxs",
+      "value": "4px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-xs",
+      "value": "6px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-sm",
+      "value": "8px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-md",
+      "value": "10px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-lg",
+      "value": "12px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-xl",
+      "value": "14px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-2xl",
+      "value": "16px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-3xl",
+      "value": "20px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-4xl",
+      "value": "24px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-5xl",
+      "value": "28px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--space-6xl",
+      "value": "40px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--editor-padding-h",
+      "value": "72px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-small",
+      "value": "6px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-medium",
+      "value": "8px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-large",
+      "value": "12px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-xl",
+      "value": "14px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-2xl",
+      "value": "18px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-full",
+      "value": "20px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-pill",
+      "value": "999px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--radius-button",
+      "value": "999px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-sidebar",
+      "value": "280px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-editor-sidebar",
+      "value": "340px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-chat-panel",
+      "value": "360px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-button-h",
+      "value": "40px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-button-h-sm",
+      "value": "32px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-icon-button",
+      "value": "32px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-chat-bubble-r",
+      "value": "14px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-chat-bubble-max",
+      "value": "300px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-avatar-lg",
+      "value": "36px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--size-avatar-md",
+      "value": "28px",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--shadow-none",
+      "value": "none",
+      "kind": "other",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--shadow-dialog",
+      "value": "0 8px 24px color-mix(in srgb, var(--shadow-base) 10%, transparent),\r\n                    0 2px 8px color-mix(in srgb, var(--shadow-base) 6%, transparent)",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    },
+    {
+      "name": "--shadow-overlay",
+      "value": "0 4px 16px color-mix(in srgb, var(--shadow-base) 8%, transparent)",
+      "kind": "spacing",
+      "definedIn": "colors_and_type.css"
+    }
+  ],
+  "themes": [],
+  "fonts": [],
+  "brandFonts": [],
+  "source": "spa"
+}

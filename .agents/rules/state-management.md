@@ -106,7 +106,7 @@
 
 通用 hooks 使用规则（调用顺序、`useEffect` 依赖、InheritedWidget 读取限制等）请参考 `.agents/rules/hooks.md`，**写 hooks 前先阅读**。
 
-以下为 Reveric 项目特有规则：
+以下为本项目特有规则：
 
 ### 状态同步规则
 

@@ -1,6 +1,6 @@
 # reveric-plugin-sdk
 
-用于开发 [Reveric](https://github.com/looplj/reveric) 插件的 SDK：类型定义、TSX 页面编译器，以及构建和打包插件的命令行工具 `reveric-plugin`。
+用于开发 [创作工作台](https://github.com/addxiaoyi/reveric) 插件的 SDK：类型定义、TSX 页面编译器，以及构建和打包插件的命令行工具 `reveric-plugin`。
 
 本文面向插件开发者，以及代替开发者编写插件的 AI agent。读完后应该能写出一个完整的插件，包括清单、入口、工具、提示词、定时任务、私有数据库和界面。
 
@@ -102,7 +102,7 @@ npm run build   # 类型检查，并构建到 build/
 npm run pack    # 构建，并打包成 example.hello-1.0.0.zip
 ```
 
-把 ZIP 导入 Reveric 即可使用。构建工具会做以下事情：
+把 ZIP 导入创作工作台即可使用。构建工具会做以下事情：
 
 - 用 `tsconfig.json` 做类型检查。
 - 把 `src/index.ts` 打包成 `dist/index.js`。
@@ -590,7 +590,7 @@ const sqlite: PluginSqlite = {
 };
 ```
 
-测试文件可以先用 esbuild（SDK 已依赖）打包成 `.mjs`（`platform: "node"`、`format: "esm"`），再用 `node --test` 运行。Reveric 仓库中的 `plugins/memory/test/` 是完整示例。
+测试文件可以先用 esbuild（SDK 已依赖）打包成 `.mjs`（`platform: "node"`、`format: "esm"`），再用 `node --test` 运行。本仓库中的 `plugins/memory/test/` 是完整示例。
 
 ## 8. 提交前检查
 

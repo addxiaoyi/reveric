@@ -1,6 +1,6 @@
 // macOS-style desktop window frame — traffic lights on the left, draggable
 // titlebar inset. This matches DesktopWindowFrame from
-// lib/desktop/widgets/desktop_window_frame.dart, which the Reveric app
+// lib/desktop/widgets/desktop_window_frame.dart, which the app
 // requires for every page root.
 function WindowFrame({ children, title }) {
   return (

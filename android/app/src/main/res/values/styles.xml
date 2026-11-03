@@ -13,7 +13,7 @@
 
          This Theme is only used starting with V2 of Flutter's Android embedding. -->
     <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
-        <!-- Match Reveric light canvas so edge-to-edge status bar has no grey band. -->
+        <!-- Match the app light canvas so edge-to-edge status bar has no grey band. -->
         <item name="android:windowBackground">#FFFEFDFB</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>

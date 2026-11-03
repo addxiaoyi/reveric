@@ -64,33 +64,33 @@ void WriteNativeState() {
   HANDLE file = ::CreateFileW(path.c_str(), GENERIC_WRITE, FILE_SHARE_READ, nullptr, CREATE_ALWAYS,
       FILE_ATTRIBUTE_NORMAL, nullptr);
   if (file == INVALID_HANDLE_VALUE) {
-    ::OutputDebugStringW(L"Reveric: cannot write native exit state\n");
+    ::OutputDebugStringW(L"Creative Workspace: cannot write native exit state\n");
     return;
   }
   DWORD written = 0;
   if (!::WriteFile(file, data, static_cast<DWORD>(length), &written, nullptr) ||
       written != static_cast<DWORD>(length) || !::FlushFileBuffers(file)) {
-    ::OutputDebugStringW(L"Reveric: native exit state write/flush failed\n");
+    ::OutputDebugStringW(L"Creative Workspace: native exit state write/flush failed\n");
   }
   ::CloseHandle(file);
 }
 
 // 与 path_provider_windows 的 Application Support 目录算法保持一致：
 // %APPDATA%\<ProductName>，ProductName 取自 exe 版本资源。
-// 读取失败时回退 "Reveric"（与 Runner.rc 中的 ProductName 一致）。
+// 读取失败时回退 "Creative Workspace"（与 Runner.rc 中的 ProductName 一致）。
 std::wstring ReadProductName() {
   wchar_t module_path[MAX_PATH] = {};
   if (::GetModuleFileNameW(nullptr, module_path, MAX_PATH) == 0) {
-    return L"Reveric";
+    return L"Creative Workspace";
   }
   DWORD handle = 0;
   const DWORD info_size = ::GetFileVersionInfoSizeW(module_path, &handle);
   if (info_size == 0) {
-    return L"Reveric";
+    return L"Creative Workspace";
   }
   std::vector<BYTE> info(info_size);
   if (!::GetFileVersionInfoW(module_path, handle, info_size, info.data())) {
-    return L"Reveric";
+    return L"Creative Workspace";
   }
 
   std::vector<DWORD> lang_codes;
@@ -120,7 +120,7 @@ std::wstring ReadProductName() {
       return value;
     }
   }
-  return L"Reveric";
+  return L"Creative Workspace";
 }
 
 std::wstring ResolveCrashDumpDirectory() {

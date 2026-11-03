@@ -61,7 +61,7 @@ void main() {
       enabled: true,
       serverUrl: 'http://${server.address.host}:${server.port}/dav/',
       username: 'author',
-      remoteDirectory: '/Reveric/Backups',
+      remoteDirectory: '/Creative Workspace/Backups',
     );
     const credentials = WebDavCredentials(
       username: 'author',
@@ -92,14 +92,14 @@ void main() {
     expect(files.single.size, 3);
     expect(
       files.single.remotePath,
-      '/Reveric/Backups/reveric_backup_20260806.zip',
+      '/Creative Workspace/Backups/reveric_backup_20260806.zip',
     );
     expect(await downloadFile.readAsBytes(), const <int>[4, 5, 6]);
     expect(
       requests,
       contains((
         method: 'PUT',
-        path: '/dav/Reveric/Backups/reveric_backup_20260806.zip',
+        path: '/dav/Creative Workspace/Backups/reveric_backup_20260806.zip',
       )),
     );
   });
@@ -109,18 +109,18 @@ final _listingXml =
     '''<?xml version="1.0" encoding="utf-8"?>
 <d:multistatus xmlns:d="DAV:">
   <d:response>
-    <d:href>/dav/Reveric/Backups/</d:href>
+    <d:href>/dav/Creative Workspace/Backups/</d:href>
     <d:propstat><d:prop><d:resourcetype><d:collection /></d:resourcetype></d:prop></d:propstat>
   </d:response>
   <d:response>
-    <d:href>/dav/Reveric/Backups/reveric_backup_20260806.zip</d:href>
+    <d:href>/dav/Creative Workspace/Backups/reveric_backup_20260806.zip</d:href>
     <d:propstat><d:prop>
       <d:getcontentlength>3</d:getcontentlength>
       <d:getlastmodified>${HttpDate.format(DateTime.utc(2026, 8, 6, 10))}</d:getlastmodified>
     </d:prop></d:propstat>
   </d:response>
   <d:response>
-    <d:href>/dav/Reveric/Backups/notes.txt</d:href>
+    <d:href>/dav/Creative Workspace/Backups/notes.txt</d:href>
     <d:propstat><d:prop><d:getcontentlength>20</d:getcontentlength></d:prop></d:propstat>
   </d:response>
 </d:multistatus>''';

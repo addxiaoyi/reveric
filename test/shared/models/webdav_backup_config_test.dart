@@ -14,12 +14,12 @@ void main() {
       serverUrl: ' https://dav.example.com/root ',
       username: ' author ',
       password: 'secret',
-      remoteDirectory: r'\Reveric\Backups\',
+      remoteDirectory: r'\Creative Workspace\Backups\',
     ).normalized();
 
     expect(config.serverUrl, 'https://dav.example.com/root/');
     expect(config.username, 'author');
-    expect(config.remoteDirectory, '/Reveric/Backups');
+    expect(config.remoteDirectory, '/Creative Workspace/Backups');
     expect(config.validate(), isNull);
   });
 

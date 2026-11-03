@@ -1,6 +1,6 @@
-# Reveric Design System
+# 创作工作台 Design System
 
-> **Reveric** is an AI‑assisted long‑form fiction writing application. The
+> **创作工作台** is an AI‑assisted long‑form fiction writing application. The
 > visual language is calm and modern — a cool mint‑white canvas, white
 > cards that float on soft shadows, near‑black ink‑jade (墨玉) actions with
 > jade for AI, sans titles and Georgia only for the manuscript — explicitly rejecting generic
@@ -8,7 +8,7 @@
 > aesthetics. **The writer's manuscript is the hero; AI is tooling.**
 
 This project mirrors that system in HTML/CSS so design agents can ship
-on‑brand Reveric artifacts (mocks, throwaway prototypes, marketing pages,
+on‑brand artifacts (mocks, throwaway prototypes, marketing pages,
 chapter sketches, settings dialogs, slides) without rebuilding tokens by
 hand.
 
@@ -19,7 +19,7 @@ The source of truth is this repository’s `DESIGN.md`, `PRODUCT.md`, and
 
 ## Product context
 
-Reveric is **not** "an AI chat app for writers". It is a structured
+The app is **not** "an AI chat app for writers". It is a structured
 **creative workspace** in which novels, chapters, world rules, characters,
 outlines, foreshadowing, and AI agents all live as connected story assets.
 The recommended writing flow is **five‑step human‑machine collaboration**:
@@ -53,7 +53,7 @@ extended, focused writing sessions, not impulse usage.
 ### Tone & voice
 
 - **Calm, literary, deliberate.** Practical and craft‑oriented, not
-  promotional. "Reveric should feel like a writer's study with careful
+  promotional. "The app should feel like a writer's study with careful
   tooling: warm, focused, readable, and quietly capable."
 - **AI is a collaborator, not a protagonist.** Copy never sells the AI;
   it describes what it will help the author *do*. Examples from the repo:
@@ -105,7 +105,7 @@ extended, focused writing sessions, not impulse usage.
 
 ### Color
 
-The default palette is **Reveric · 玉白 · 墨玉** — a cool mint‑white canvas
+The default palette is **默认 · 玉白 · 墨玉** — a cool mint‑white canvas
 (`#F2F6F4`) holding white cards, near‑black ink‑jade (`#1C2623`) for primary
 actions, and jade (`#2A9C78`, the `accent-amber` slot) for AI and small
 emphasis — intentionally low‑glare. The mockups use it as the default; the Flutter
@@ -116,7 +116,7 @@ mirror Flutter `AppTheme` — **three palettes** × light/dark, defined in
 
 | Palette       | Personality                              | Accent (light / dark)   |
 |---------------|------------------------------------------|-------------------------|
-| Reveric ★     | Mint‑white canvas, ink‑jade (default)    | `#1C2623` / `#E4ECE8`   |
+| 默认 ★     | Mint‑white canvas, ink‑jade (default)    | `#1C2623` / `#E4ECE8`   |
 | 经典 Classic  | Pure B&W, high contrast                  | `#000000` / `#FFFFFF`   |
 | 象牙 Ivory    | Sage on cream                            | `#A2AF9B` / `#A2AF9B`   |
 
@@ -222,7 +222,7 @@ opaque. No glassmorphism, no inner shadows, no protection gradients.
 
 ### Cards
 
-A Reveric card is: `surface` + `1px solid var(--card-border)` + 18px
+A card is: `surface` + `1px solid var(--card-border)` + 18px
 radius (`--radius-2xl`; 12px for cards ≤ ~160px) + `--shadow-card` +
 12–24px internal padding. Never card‑in‑card. Placeholder covers use cool,
 desaturated gradients (ink‑jade, slate, plum, dusty jade) — no sepia. Never left‑border‑accent‑only cards.
@@ -253,7 +253,8 @@ See [`ICONOGRAPHY.md`](./ICONOGRAPHY.md). Short version:
 | `ICONOGRAPHY.md`          | Icon system rules and inventory                             |
 | `SKILL.md`                | Agent Skill manifest — read when the skill is invoked       |
 | `colors_and_type.css`     | Tokens (CSS custom properties) + semantic element classes   |
-| `assets/logo/`            | Reveric mark (svg + png 128/256) + stacked lockup + app icon |
+| `styles.css`              | Global CSS entry for the design-system compiler             |
+| `assets/logo/`            | App mark (svg + png 128/256) + stacked lockup + app icon |
 | `assets/icons/phosphor/`  | ~95 phosphor `regular` SVGs (the working subset)            |
 | `assets/illustrations/`   | `ai_assistant_window.svg` — only product illustration       |
 | `assets/images/background/` | Four ink‑painting backgrounds (webp)                      |

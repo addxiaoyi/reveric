@@ -84,7 +84,7 @@
   "plugin.task_model_not_found": "所选模型已不可用，请在插件配置中重新选择。",
   "plugin.task_permission_missing": "插件尚未获得所需权限，授权后再运行。",
   "plugin.tools_count": "工具（{count}）",
-  "plugin.unreviewed": "本地插件未经 Reveric 审核，请只安装来源可信的插件。",
+  "plugin.unreviewed": "本地插件未经官方审核，请只安装来源可信的插件。",
   "plugin.version_upgrade": "{from} → {to}",
   "plugin.unsaved_changes_message": "配置有未保存的更改。可以丢弃，或取消后先保存。"
 }

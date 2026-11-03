@@ -1,8 +1,8 @@
-# Iconography — Reveric
+# Iconography — 创作工作台
 
 ## System
 
-Reveric uses **[Phosphor Icons](https://phosphoricons.com/)**, `regular`
+The app uses **[Phosphor Icons](https://phosphoricons.com/)**, `regular`
 weight only. Phosphor is monolinear with a 1.5‑unit stroke, rounded
 caps/joins, and a 256×256 viewBox — its quiet, slightly‑literary
 character matches the parchment/Georgia surfaces of the app without
@@ -67,7 +67,7 @@ and inlines it so `color` works through normal CSS inheritance.
 
 ## Inventory (working subset, ~95 icons)
 
-A complete list of phosphor names with their Reveric semantic usage:
+A complete list of phosphor names with their semantic usage:
 
 - **Navigation / app:** `house`, `gear-six`, `magnifying-glass`,
   `caret-{up,down,left,right}`, `arrow-{left,right}`, `dots-three`,
@@ -102,7 +102,7 @@ treatment will visibly clash.
 
 ## Logo & brand mark
 
-The Reveric logo — "Reverie Fold" (source of truth: the repo's `assets/logo/reveric-raw.png`; vector: `assets/logo/reveric_mark.svg`):
+The app mark (source of truth: the repo's `assets/logo/reveric-raw.png`; vector: `assets/logo/reveric_mark.svg`):
 
 - A sweeping **ink‑blue ribbon** (`#283B5E`) rising from lower left to
   upper right, its right edge cut straight.
@@ -110,7 +110,7 @@ The Reveric logo — "Reverie Fold" (source of truth: the repo's `assets/logo/re
   separated from the ribbon by a thin canvas‑colored gap. Keep the gap;
   never let the two shapes touch or overlap.
 - Both shapes are flat fills — no outlines, gradients or shadows.
-- The **wordmark** "Reveric" set in Literata Regular with light tracking,
+- The **wordmark** (app name) set in Literata Regular with light tracking,
   roughly 1.75× the mark's width, with a hairline periwinkle divider
   centered below.
 

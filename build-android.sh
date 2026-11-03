@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# build-android.sh — 本地与 CI 构建 Reveric Android APK
+# build-android.sh — 本地与 CI 构建 创作工作台 Android APK
 #
 # 流程:
 #   1. 备份 pubspec.yaml

@@ -1,5 +1,5 @@
 // Builds a plugin project into the package layout the Host loads, and packs
-// it as an importable ZIP. Used by the reveric-plugin CLI and by Reveric's
+// it as an importable ZIP. Used by the reveric-plugin CLI and by the app's
 // bundled plugins.
 import { build } from "esbuild";
 import { zipSync } from "fflate";

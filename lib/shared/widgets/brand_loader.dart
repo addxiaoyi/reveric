@@ -1,9 +1,11 @@
 // 职责: 品牌加载动画（整屏等待用）— 双色折带描线入场，之后循环等待，外部标记完成后淡出。
 // 关联文件:
 //   assets/logo/reveric_mark.svg
-//   assets/logo/reveric_wordmark.png
 //   lib/main.dart
 //   lib/desktop/pages/onboarding.dart
+//   lib/shared/localization/locale_keys.dart
+//   assets/translations/en/app.json
+//   assets/translations/zh-CN/app.json
 // 遵循的 Rules:
 //   .agents/rules/hooks.md
 //   .agents/rules/design-system.md
@@ -13,6 +15,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
+import '../localization/app_localization.dart';
+import '../localization/locale_keys.dart';
 import '../theme/theme.dart';
 
 /// 入场时长（秒）。done 早于入场结束时，等入场播完再退出。
@@ -55,6 +59,12 @@ class BrandLoader extends HookWidget {
     final colors = RevericTheme.colorsOf(context);
     final palette = _BrandPalette.of(Theme.of(context).brightness);
     final reduceMotion = MediaQuery.disableAnimationsOf(context);
+    // 启动占位可能早于翻译资源加载完成，此时 tr 会原样返回 key。
+    final titleKey = LocaleKeys.appTitle;
+    final translatedTitle = context.t(titleKey);
+    final wordmark = translatedTitle == titleKey
+        ? 'Creative Workspace'
+        : translatedTitle;
 
     final vsync = useSingleTickerProvider();
     // 当前时间（秒）与完成请求时刻；ListenableBuilder 只重建动画子树。
@@ -167,12 +177,18 @@ class BrandLoader extends HookWidget {
                         height: wordRect.height,
                         child: Opacity(
                           opacity: word,
-                          child: Image.asset(
-                            'assets/logo/reveric_wordmark.png',
-                            color: palette.word,
-                            colorBlendMode: BlendMode.srcIn,
-                            fit: BoxFit.fill,
-                            filterQuality: FilterQuality.medium,
+                          child: FittedBox(
+                            fit: BoxFit.contain,
+                            child: Text(
+                              wordmark,
+                              maxLines: 1,
+                              style: TextStyle(
+                                color: palette.word,
+                                fontSize: 100,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 2,
+                              ),
+                            ),
                           ),
                         ),
                       ),

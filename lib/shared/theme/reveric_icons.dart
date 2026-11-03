@@ -1,4 +1,4 @@
-// 职责: Reveric 图标系统 — 封装 phosphor SVG 资产映射与主题感知图标组件。
+// 职责: 图标系统 — 封装 phosphor SVG 资产映射与主题感知图标组件。
 // 关联文件:
 //   pubspec.yaml
 //   lib/shared/theme/theme.dart

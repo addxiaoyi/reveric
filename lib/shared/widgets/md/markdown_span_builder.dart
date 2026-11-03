@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 
 import '../../theme/theme.dart';
 
-/// 构建 Reveric 编辑器支持的 Markdown 样式。
+/// 构建编辑器支持的 Markdown 样式。
 class RevericMarkdownSpanBuilder {
   RevericMarkdownSpanBuilder._();
 
@@ -27,7 +27,7 @@ class RevericMarkdownSpanBuilder {
 
   static final _PreviewSpanCache _previewCache = _PreviewSpanCache();
 
-  /// 使用当前 Reveric theme 构建 span。
+  /// 使用当前主题构建 span。
   static TextSpan build({
     required BuildContext context,
     required String text,

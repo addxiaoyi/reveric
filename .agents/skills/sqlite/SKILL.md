@@ -1,11 +1,11 @@
 ---
 name: sqlite
-description: Query and modify Reveric's SQLite databases directly. Use when the user asks to inspect, query, or update data in Reveric's databases — including novels, chapters, characters, AI providers, chat messages, settings, or any other persisted data. Also triggers on phrases like "check the database", "what's in the novel database", "show me all chapters", "update novel settings", "query sqlite", or when troubleshooting data persistence issues.
+description: Query and modify the app's SQLite databases directly. Use when the user asks to inspect, query, or update data in the app's databases — including novels, chapters, characters, AI providers, chat messages, settings, or any other persisted data. Also triggers on phrases like "check the database", "what's in the novel database", "show me all chapters", "update novel settings", "query sqlite", or when troubleshooting data persistence issues.
 ---
 
-# Reveric SQLite Skill
+# 创作工作台 SQLite Skill
 
-Directly query and modify Reveric's SQLite databases for debugging, data inspection, and manual fixes.
+Directly query and modify the app's SQLite databases for debugging, data inspection, and manual fixes.
 
 ## Database Locations
 

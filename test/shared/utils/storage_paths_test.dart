@@ -279,9 +279,9 @@ void main() {
 
   for (final prefix in [
     '',
-    r'C:\old\Reveric\',
-    'C:/old/Reveric/',
-    r'\\server\share\Reveric\',
+    r'C:\old\Creative Workspace\',
+    'C:/old/Creative Workspace/',
+    r'\\server\share\Creative Workspace\',
   ]) {
     test(
       'foreign stored paths resolve to existing local files: $prefix',

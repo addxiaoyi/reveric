@@ -1,5 +1,5 @@
 /* ============================================================
-   Reveric Mobile · Kit — icons + shared atoms
+   创作工作台 Mobile · Kit — icons + shared atoms
    phosphor-regular-style stroke icons (1.6 weight) 与既有移动端一致
    ============================================================ */
 const { useState, useRef, useEffect } = React;
@@ -287,9 +287,9 @@ function Empty({icon, text, sub}){
    ?avatar=ink 远山剪影，?avatar=legacy 现状灰色人像，用于对比。 */
 const USER_AVATAR_TONES = ['#4F8C7C', '#56688C', '#A7714F', '#93708A', '#76875A'];
 const USER_AVATAR_VARIANT = new URLSearchParams(location.search).get('avatar') || 'mono';
-function DefaultUserAvatar({name='Reveric', size=52, variant=USER_AVATAR_VARIANT}){
+function DefaultUserAvatar({name='作者', size=52, variant=USER_AVATAR_VARIANT}){
   let h = 0;
-  for (const ch of (name || 'Reveric')) h = (h * 31 + ch.codePointAt(0)) & 0x7fffffff;
+  for (const ch of (name || '作者')) h = (h * 31 + ch.codePointAt(0)) & 0x7fffffff;
   const tone = USER_AVATAR_TONES[h % USER_AVATAR_TONES.length];
   const ring = `inset 0 0 0 1px color-mix(in srgb, ${tone} 26%, transparent)`;
   const base = {width:size, height:size, borderRadius:'50%', flex:'none', overflow:'hidden',

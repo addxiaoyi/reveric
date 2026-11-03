@@ -626,7 +626,7 @@ class _WelcomeBlock extends StatelessWidget {
                 text: '${context.t(LocaleKeys.onboardingBrandWelcome)} ',
               ),
               TextSpan(
-                text: 'Reveric',
+                text: context.t(LocaleKeys.appTitle),
                 style: titleStyle.copyWith(color: colors.accentWarm),
               ),
             ],
