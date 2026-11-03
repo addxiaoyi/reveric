@@ -40,7 +40,6 @@ import 'provider_draft.dart';
 import 'provider_logo.dart';
 import 'provider_overview.dart';
 import 'provider_type_picker.dart';
-import 'providers/registry.dart';
 
 /// AI providers section：左侧 provider 列表 + 右侧配置面板（桌面），
 /// 或纯列表 + push 到配置页（移动端及宽度 < 600 的窗口）。
@@ -551,7 +550,6 @@ class ProviderListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = RevericTheme.colorsOf(context);
     final typo = RevericTheme.typographyOf(context);
-    final showcase = providerShowcases[config.type];
 
     return Material(
       color: isSelected ? colors.selected : colors.surfaceDim,
@@ -593,8 +591,7 @@ class ProviderListItem extends StatelessWidget {
                     if (config.isTypeSupported) ...[
                       const SizedBox(height: RevericSpacing.xxs),
                       Text(
-                        showcase?.listTagline?.call(context) ??
-                            providerCapabilitySummary(context, config),
+                        providerCapabilitySummary(context, config),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: typo.uiTiny.copyWith(color: colors.textMuted),

@@ -21,7 +21,6 @@ import '../../components/reveric_search_field.dart';
 import '../../components/reveric_icon_button.dart';
 import 'provider_logo.dart';
 import 'provider_overview.dart';
-import 'providers/registry.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../../components/reveric_badge.dart';
@@ -176,7 +175,6 @@ class _MobileProviderRow extends StatelessWidget {
     final colors = RevericTheme.colorsOf(context);
     final typo = RevericTheme.typographyOf(context);
     final providerName = localizedAiProviderName(context, config);
-    final showcase = providerShowcases[config.type];
 
     return InkWell(
       onTap: onTap,
@@ -223,8 +221,7 @@ class _MobileProviderRow extends StatelessWidget {
                   if (config.isTypeSupported) ...[
                     const SizedBox(height: RevericSpacing.xxs),
                     Text(
-                      showcase?.listTagline?.call(context) ??
-                          providerCapabilitySummary(context, config),
+                      providerCapabilitySummary(context, config),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: typo.uiSmall.copyWith(color: colors.textMuted),

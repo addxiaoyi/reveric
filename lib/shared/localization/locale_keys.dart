@@ -4016,8 +4016,6 @@ abstract final class LocaleKeys {
   static const settingsProviderDescriptionMetaso =
       'settings.provider_description_metaso';
   static const settingsProviderSearchHint = 'settings.provider_search_hint';
-  static const settingsProviderSponsoredBadge =
-      'settings.provider_sponsored_badge';
   static const settingsProviderMetasoLink = 'settings.provider_metaso_link';
   static const settingsProviderMetasoCategory =
       'settings.provider_metaso_category';
@@ -4029,11 +4027,6 @@ abstract final class LocaleKeys {
       'settings.provider_metaso_max_duration';
   static const settingsProviderMetasoSeconds =
       'settings.provider_metaso_seconds';
-  static const settingsProviderMetasoPriceUnit =
-      'settings.provider_metaso_price_unit';
-  static const settingsProviderMetasoHd = 'settings.provider_metaso_hd';
-  static const settingsProviderMetasoNative2k =
-      'settings.provider_metaso_native_2k';
   static const settingsProviderMetasoResolutionTitle =
       'settings.provider_metaso_resolution_title';
   static const settingsProviderMetasoResolutionDescription =
@@ -4048,8 +4041,6 @@ abstract final class LocaleKeys {
   static const settingsProviderMetasoNoGpu = 'settings.provider_metaso_no_gpu';
   static const settingsProviderMetasoPricingNote =
       'settings.provider_metaso_pricing_note';
-  static const settingsProviderMetasoListTagline =
-      'settings.provider_metaso_list_tagline';
   static const settingsAiGetApiKey = 'settings.ai_get_api_key';
   static const settingsAiOpenApiKeyFailed = 'settings.ai_open_api_key_failed';
   static const settingsCodexCheckLogin = 'settings.codex_check_login';

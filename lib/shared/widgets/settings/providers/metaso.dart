@@ -1,4 +1,4 @@
-// 职责: 展示秘塔科技 MiniMax H3 的介绍卡片、价格要点和渠道入口。
+// 职责: 展示秘塔科技 MiniMax H3 的介绍卡片和渠道入口。
 // 关联文件:
 //   lib/shared/widgets/settings/providers/registry.dart
 //   lib/shared/widgets/settings/provider_overview.dart
@@ -12,7 +12,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../components/reveric_badge.dart';
 import '../../../components/reveric_button.dart';
 import '../../../components/reveric_surfaces.dart';
 import '../../../localization/app_localization.dart';
@@ -22,21 +21,9 @@ import '../../../theme/theme.dart';
 import '../provider_overview.dart';
 import 'registry.dart';
 
-// 标准通道 15 秒及以内的单价（元/秒），以秘塔官网为准。
-const _hdPrice = '0.09';
-const _twoKPrice = '0.15';
-
-const metasoShowcase = ProviderShowcase(
-  card: _buildCard,
-  listTagline: _listTagline,
-);
+const metasoShowcase = ProviderShowcase(card: _buildCard);
 
 Widget _buildCard(BuildContext context) => const _MetasoCard();
-
-String _listTagline(BuildContext context) => context.t(
-  LocaleKeys.settingsProviderMetasoListTagline,
-  namedArgs: {'price': _hdPrice},
-);
 
 class _MetasoCard extends StatelessWidget {
   const _MetasoCard();
@@ -63,19 +50,9 @@ class _MetasoCard extends StatelessWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      context.t(LocaleKeys.settingsProviderMetasoCategory),
-                      style: typo.uiTiny.copyWith(color: colors.textMuted),
-                    ),
-                  ),
-                  RevericBadge(
-                    label: context.t(LocaleKeys.settingsProviderSponsoredBadge),
-                    color: colors.textMuted,
-                  ),
-                ],
+              Text(
+                context.t(LocaleKeys.settingsProviderMetasoCategory),
+                style: typo.uiTiny.copyWith(color: colors.textMuted),
               ),
               const SizedBox(height: RevericSpacing.lg),
               _pair(
@@ -121,9 +98,9 @@ class _MetasoCard extends StatelessWidget {
                       style: typo.uiTiny.copyWith(color: colors.textMuted),
                     ),
                     const SizedBox(height: RevericSpacing.xxs),
-                    _Figure(
-                      value: '30',
-                      unit: context.t(LocaleKeys.settingsProviderMetasoSeconds),
+                    Text(
+                      '30${context.t(LocaleKeys.settingsProviderMetasoSeconds)}',
+                      style: typo.display.copyWith(color: colors.textPrimary),
                     ),
                     const SizedBox(height: RevericSpacing.xxs),
                     Text(
@@ -131,20 +108,6 @@ class _MetasoCard extends StatelessWidget {
                       style: typo.uiTiny.copyWith(color: colors.textMuted),
                     ),
                   ],
-                ),
-              ),
-              divider,
-              _pair(
-                wide: wide,
-                first: _Price(
-                  resolution: '768P',
-                  label: context.t(LocaleKeys.settingsProviderMetasoHd),
-                  price: _hdPrice,
-                ),
-                second: _Price(
-                  resolution: '2K',
-                  label: context.t(LocaleKeys.settingsProviderMetasoNative2k),
-                  price: _twoKPrice,
                 ),
               ),
               divider,
@@ -175,8 +138,8 @@ class _MetasoCard extends StatelessWidget {
                     ? CrossAxisAlignment.center
                     : CrossAxisAlignment.stretch,
                 children: [
-                  _flexible(
-                    wide: footerWide,
+                  Flexible(
+                    flex: 1,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -212,9 +175,9 @@ class _MetasoCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    width: RevericSpacing.x4l,
-                    height: RevericSpacing.lg,
+                  SizedBox(
+                    width: footerWide ? RevericSpacing.x4l : 0,
+                    height: footerWide ? 0 : RevericSpacing.lg,
                   ),
                   RevericButton.primary(
                     label: context.t(LocaleKeys.settingsProviderMetasoLink),
@@ -274,80 +237,6 @@ class _MetasoCard extends StatelessWidget {
           if (flexible) Expanded(child: second) else second,
         ],
       ),
-    );
-  }
-
-  Widget _flexible({required bool wide, required Widget child}) =>
-      wide ? Expanded(child: child) : child;
-}
-
-class _Figure extends StatelessWidget {
-  const _Figure({required this.value, required this.unit});
-  final String value;
-  final String unit;
-
-  @override
-  Widget build(BuildContext context) {
-    final colors = RevericTheme.colorsOf(context);
-    final typo = RevericTheme.typographyOf(context);
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.baseline,
-      textBaseline: TextBaseline.alphabetic,
-      children: [
-        Text(value, style: typo.display.copyWith(color: colors.textPrimary)),
-        const SizedBox(width: RevericSpacing.xs),
-        Flexible(
-          child: Text(
-            unit,
-            style: typo.uiSmall.copyWith(color: colors.textSecondary),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _Price extends StatelessWidget {
-  const _Price({
-    required this.resolution,
-    required this.label,
-    required this.price,
-  });
-  final String resolution;
-  final String label;
-  final String price;
-
-  @override
-  Widget build(BuildContext context) {
-    final colors = RevericTheme.colorsOf(context);
-    final typo = RevericTheme.typographyOf(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.baseline,
-          textBaseline: TextBaseline.alphabetic,
-          children: [
-            Text(
-              resolution,
-              style: typo.uiSmallSemibold.copyWith(color: colors.textPrimary),
-            ),
-            const SizedBox(width: RevericSpacing.sm),
-            Flexible(
-              child: Text(
-                label,
-                style: typo.uiTiny.copyWith(color: colors.textMuted),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: RevericSpacing.sm),
-        _Figure(
-          value: price,
-          unit: context.t(LocaleKeys.settingsProviderMetasoPriceUnit),
-        ),
-      ],
     );
   }
 }

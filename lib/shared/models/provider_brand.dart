@@ -6,7 +6,7 @@
 
 const providerChannelUrls = {
   'metaso': 'https://metaso.cn/minimax-h3/',
-  'api88': 'https://88api.ai/sign-up?aff=5q8X',
+  'api88': 'https://88api.ai',
   'openai': 'https://platform.openai.com/api-keys',
   'openrouter': 'https://openrouter.ai/settings/keys',
   'xai': 'https://console.x.ai/',
@@ -20,7 +20,7 @@ const providerChannelUrls = {
   'volcengine': 'https://console.volcengine.com/ark/region:cn-beijing/apiKey',
   'minimax': 'https://platform.minimax.io/console/access',
   'agnes': 'https://platform.agnes-ai.com/',
-  'atlascloud': 'https://www.atlascloud.ai?ref=6MQKFA',
+  'atlascloud': 'https://www.atlascloud.ai',
 };
 
 const providerLogoAssets = <String, String>{
