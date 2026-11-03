@@ -1,4 +1,4 @@
-/* @ds-bundle: {"format":3,"namespace":"RevericDesignSystem_74ac7e","components":[],"sourceHashes":{"AgentEditPanel.jsx":"c6c438ca4338","AgentPanel.jsx":"4d07d8a4f564","App.jsx":"a9eefe6c8d33","Avatar.jsx":"463f7f8c4efd","ChapterTree.jsx":"e1e15aaffd84","CharacterProfile.jsx":"c2c74520cf42","ChatPanel.jsx":"9c28c6d24e98","Comments.jsx":"75c2a0b520fb","ContextPanel.jsx":"df94e4087904","CoverStudio.jsx":"a16408c4e683","EditorView.jsx":"f015188cb5c6","EntityGraph.jsx":"e4ce577ac134","Icon.jsx":"22818aa49e0f","LibraryCollections.jsx":"eeaa8c3cfaa2","LibraryView.jsx":"1028956ddf2c","ManagementGridView.jsx":"e6a8b97a1518","ManuscriptEditor.jsx":"bbc9730d1c94","MapStudio.jsx":"9e55bf752d35","ModelSelectButton.jsx":"5a28ef8f2c03","NavRail.jsx":"63b28af04314","NovelFormDialog.jsx":"97a511632bf1","NovelOverview.jsx":"e4e4bbd4c6b1","SettingsDialog.jsx":"3e906c1cd953","Sidebar.jsx":"db0ba8125cb1","WindowFrame.jsx":"d0d949dcef82","agent_studio.jsx":"bba35a618472","canvas/agent.jsx":"c8f1b84cf3ce","canvas/app.jsx":"9fcdfad827ee","canvas/board.jsx":"faf5679661cf","canvas/data.jsx":"87797813a4be","canvas/panels.jsx":"b786a0bc2e20","drama/app.jsx":"794fe41178fe","drama/approval.jsx":"6f04005ac241","drama/board.jsx":"ae26b2cddf25","drama/chat.jsx":"d25164d0f9fb","drama/composer.jsx":"c10e31bc606d","drama/data.jsx":"4e77d662b4d2","drama/director.jsx":"ceca7d6a93fe","drama/edit_data.jsx":"bfb0375a2630","drama/edit_panels.jsx":"412fceec9bf0","drama/edit_timeline.jsx":"0f79ac1e2213","drama/editing.jsx":"bc81d33fb79e","drama/grid.jsx":"923ac0975837","drama/segments.jsx":"441dd6ce88bd","drama/style.jsx":"ce1b4899e730","drama/views.jsx":"16ae66049f39","providers.jsx":"dd93301c7cb2","screenplay/data.jsx":"2e1d1a407bc1","screenplay/views.jsx":"aadfa98aa342","skills/data.jsx":"ff82d63d064d","skills/views.jsx":"c665776b7e4d","usage.jsx":"1ce6e0aa8569"},"inlinedExternals":[],"unexposedExports":[]} */
+/* @ds-bundle: {"format":3,"namespace":"RevericDesignSystem_74ac7e","components":[],"sourceHashes":{"AgentEditPanel.jsx":"c6c438ca4338","AgentPanel.jsx":"4d07d8a4f564","App.jsx":"a9eefe6c8d33","Avatar.jsx":"fffe8ff0a627","ChapterTree.jsx":"e1e15aaffd84","CharacterProfile.jsx":"c2c74520cf42","ChatPanel.jsx":"9c28c6d24e98","Comments.jsx":"75c2a0b520fb","ContextPanel.jsx":"df94e4087904","CoverStudio.jsx":"a16408c4e683","EditorView.jsx":"f015188cb5c6","EntityGraph.jsx":"e4ce577ac134","Icon.jsx":"22818aa49e0f","LibraryCollections.jsx":"eeaa8c3cfaa2","LibraryView.jsx":"1028956ddf2c","ManagementGridView.jsx":"e6a8b97a1518","ManuscriptEditor.jsx":"bbc9730d1c94","MapStudio.jsx":"9e55bf752d35","ModelSelectButton.jsx":"5a28ef8f2c03","NavRail.jsx":"63b28af04314","NovelFormDialog.jsx":"97a511632bf1","NovelOverview.jsx":"e4e4bbd4c6b1","SettingsDialog.jsx":"3e906c1cd953","Sidebar.jsx":"b60c72b9e641","WindowFrame.jsx":"d0d949dcef82","agent_studio.jsx":"bba35a618472","canvas/agent.jsx":"c8f1b84cf3ce","canvas/app.jsx":"9fcdfad827ee","canvas/board.jsx":"faf5679661cf","canvas/data.jsx":"87797813a4be","canvas/panels.jsx":"b786a0bc2e20","drama/app.jsx":"794fe41178fe","drama/approval.jsx":"6f04005ac241","drama/board.jsx":"ae26b2cddf25","drama/chat.jsx":"d25164d0f9fb","drama/composer.jsx":"c10e31bc606d","drama/data.jsx":"4e77d662b4d2","drama/director.jsx":"ceca7d6a93fe","drama/edit_data.jsx":"bfb0375a2630","drama/edit_panels.jsx":"412fceec9bf0","drama/edit_timeline.jsx":"0f79ac1e2213","drama/editing.jsx":"bc81d33fb79e","drama/grid.jsx":"923ac0975837","drama/segments.jsx":"441dd6ce88bd","drama/style.jsx":"ce1b4899e730","drama/views.jsx":"16ae66049f39","providers.jsx":"dd93301c7cb2","screenplay/data.jsx":"2e1d1a407bc1","screenplay/views.jsx":"aadfa98aa342","skills/data.jsx":"ff82d63d064d","skills/views.jsx":"c665776b7e4d","usage.jsx":"1ce6e0aa8569"},"inlinedExternals":[],"unexposedExports":[]} */
 
 (() => {
 
@@ -1002,24 +1002,8 @@ function DefaultAvatar({
     }
   }, avatarGlyph(name));
 }
-
-// QQ brand mark (Simple Icons, CC0). Solid, inherits currentColor.
-function QqMark({
-  size = 16
-}) {
-  return /*#__PURE__*/React.createElement("svg", {
-    viewBox: "0 0 24 24",
-    width: size,
-    height: size,
-    fill: "currentColor",
-    "aria-hidden": "true"
-  }, /*#__PURE__*/React.createElement("path", {
-    d: "M21.395 15.035a40 40 0 0 0-.803-2.264l-1.079-2.695c.001-.032.014-.562.014-.836C19.526 4.632 17.351 0 12 0S4.474 4.632 4.474 9.241c0 .274.013.804.014.836l-1.08 2.695a39 39 0 0 0-.802 2.264c-1.021 3.283-.69 4.643-.438 4.673.54.065 2.103-2.472 2.103-2.472 0 1.469.756 3.387 2.394 4.771-.612.188-1.363.479-1.845.835-.434.32-.379.646-.301.778.343.578 5.883.369 7.482.189 1.6.18 7.14.389 7.483-.189.078-.132.132-.458-.301-.778-.483-.356-1.233-.646-1.846-.836 1.637-1.384 2.393-3.302 2.393-4.771 0 0 1.563 2.537 2.103 2.472.251-.03.581-1.39-.438-4.673"
-  }));
-}
 Object.assign(window, {
-  DefaultAvatar,
-  QqMark
+  DefaultAvatar
 });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "Avatar.jsx", error: String((e && e.message) || e) }); }
 
@@ -13056,43 +13040,12 @@ function RecentSessions({
     className: "m-sb-session__time"
   }, session.time))))));
 }
-const QQ_GROUP_NUMBER = "924148054";
-// 与 lib/shared/app_config.dart revericQqGroupJoinUrl / revericGitHubRepoUrl 一致。
-const QQ_GROUP_JOIN_URL = "https://qm.qq.com/q/Ap8pfOWHDO";
-const GITHUB_REPO_URL = "https://github.com/addxiaoyi/reveric";
 
-// QQ 群是主入口：带文字，比纯图标更容易被看到；群号只提供复制。GitHub 退为图标按钮。
+// GitHub 开源仓库是唯一入口。
 function CommunityRow() {
-  const [copied, setCopied] = React.useState(false);
-  const copy = () => {
-    navigator.clipboard?.writeText(QQ_GROUP_NUMBER);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1400);
-  };
   return /*#__PURE__*/React.createElement("div", {
     className: "m-sb-community"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "m-sb-qq"
   }, /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "m-sb-qq__open",
-    title: "\u6253\u5F00 QQ \u52A0\u5165\u4EA4\u6D41\u7FA4",
-    onClick: () => window.open(QQ_GROUP_JOIN_URL, "_blank")
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "m-sb-qq__mark"
-  }, /*#__PURE__*/React.createElement(QqMark, {
-    size: 14
-  })), /*#__PURE__*/React.createElement("span", {
-    className: "m-sb-qq__label"
-  }, "\u52A0\u5165 QQ \u7FA4")), /*#__PURE__*/React.createElement("button", {
-    type: "button",
-    className: "m-sb-qq__copy",
-    title: copied ? "已复制到剪贴板" : "复制",
-    onClick: copy
-  }, /*#__PURE__*/React.createElement(Icon, {
-    name: copied ? "check" : "copy",
-    size: 14
-  }))), /*#__PURE__*/React.createElement("button", {
     type: "button",
     className: "m-icon-btn",
     title: "GitHub \u5F00\u6E90\u4ED3\u5E93",

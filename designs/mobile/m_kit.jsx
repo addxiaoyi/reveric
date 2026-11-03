@@ -141,7 +141,7 @@ function Cover({n, w, h, fs=15}){
     <div className="cover" style={{width:w, height:h, background:n.tint, padding:fs*0.7}}>
       <span className="cspine"></span>
       <div className="ctitle" style={{fontSize:fs}}>{n.title}</div>
-      <div className="cfoot">REVERIC</div>
+      <div className="cfoot">创作工作台</div>
     </div>
   );
 }

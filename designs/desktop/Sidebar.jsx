@@ -58,41 +58,10 @@ function RecentSessions({ sessions }) {
   );
 }
 
-const QQ_GROUP_NUMBER = "924148054";
-// 与 lib/shared/app_config.dart revericQqGroupJoinUrl / revericGitHubRepoUrl 一致。
-const QQ_GROUP_JOIN_URL = "https://qm.qq.com/q/Ap8pfOWHDO";
-const GITHUB_REPO_URL = "https://github.com/addxiaoyi/reveric";
-
-// QQ 群是主入口：带文字，比纯图标更容易被看到；群号只提供复制。GitHub 退为图标按钮。
+// GitHub 开源仓库是唯一入口。
 function CommunityRow() {
-  const [copied, setCopied] = React.useState(false);
-  const copy = () => {
-    navigator.clipboard?.writeText(QQ_GROUP_NUMBER);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1400);
-  };
-
   return (
     <div className="m-sb-community">
-      <div className="m-sb-qq">
-        <button
-          type="button"
-          className="m-sb-qq__open"
-          title="打开 QQ 加入交流群"
-          onClick={() => window.open(QQ_GROUP_JOIN_URL, "_blank")}
-        >
-          <span className="m-sb-qq__mark"><QqMark size={14} /></span>
-          <span className="m-sb-qq__label">加入 QQ 群</span>
-        </button>
-        <button
-          type="button"
-          className="m-sb-qq__copy"
-          title={copied ? "已复制到剪贴板" : "复制"}
-          onClick={copy}
-        >
-          <Icon name={copied ? "check" : "copy"} size={14} />
-        </button>
-      </div>
       <button
         type="button"
         className="m-icon-btn"
